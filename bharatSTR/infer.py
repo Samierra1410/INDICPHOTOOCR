@@ -85,5 +85,5 @@ def main(checkpoint, language, image_dir, save_dir):
     with open(f"{save_dir}/{language}_test.json", 'w') as json_file:
         json.dump(parseq_dict, json_file, indent=4, ensure_ascii=False)
 
-if __name__ == '__main__':
-    fire.Fire(main)
+# if __name__ == '__main__':
+#     fire.Fire(main)
