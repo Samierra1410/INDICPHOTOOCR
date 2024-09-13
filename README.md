@@ -1,3 +1,4 @@
+# BharatSTR
 ## Getting Started
 This repository contains recognition modules for 3 different languages.
 | Language |
