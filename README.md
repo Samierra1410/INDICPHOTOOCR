@@ -32,7 +32,7 @@ Tested on CUDA 11.7 with python 3.9.
 ### Inference 
 Following command is used to get inference on a set of images from desired model options available in [assets](https://github.com/anikde/STocr/releases/tag/v1.0.0).
 ```
-python your_script.py \
+python infer.py \
 --checkpoint /path/to/checkpoint.ckpt \
 --language hindi \
 --image_dir /path/to/images \
