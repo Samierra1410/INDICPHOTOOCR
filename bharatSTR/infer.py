@@ -53,7 +53,7 @@ def get_model_output(device, model, image_path, language):
 
     return text
 
-def main(checkpoint, language, image_dir, save_dir):
+def bstr(checkpoint, language, image_dir, save_dir):
     """
     Runs the OCR model to process images and save the output as a JSON file.
 

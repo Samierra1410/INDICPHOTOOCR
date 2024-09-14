@@ -2,6 +2,6 @@
 # from strhub.models.utils import load_from_checkpoint
 import sys
 # caution: path[0] is reserved for script path (or '' in REPL)
-sys.path.insert(1, '/DATA/ocr_team_2/anik/github_repo/bharatSTR/bharatSTR')
-from .infer import main
+sys.path.insert(1, '/DATA/ocr_team_2/anik/github_repo/bharatSTR/bharatSTR') 
+from .infer import bstr
 # some_file.py
