@@ -85,5 +85,33 @@ def bstr(checkpoint, language, image_dir, save_dir):
     with open(f"{save_dir}/{language}_test.json", 'w') as json_file:
         json.dump(parseq_dict, json_file, indent=4, ensure_ascii=False)
 
+
+def bstr_onImage(checkpoint, language, image_path):
+    """
+    Runs the OCR model to process images and save the output as a JSON file.
+
+    Args:
+        checkpoint (str): Path to the model checkpoint file.
+        language (str): Language code (e.g., 'hindi', 'english').
+        image_dir (str): Directory containing the images to process.
+        save_dir (str): Directory where the output JSON file will be saved.
+
+    Example usage:
+        python your_script.py --checkpoint /path/to/checkpoint.ckpt --language hindi --image_dir /path/to/images --save_dir /path/to/save
+    """
+    device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+
+    if language != "english":
+        model = load_model(device, checkpoint)
+    else:
+        model = torch.hub.load('baudm/parseq', 'parseq', pretrained=True).eval().to(device)
+
+# parseq_dict = {}
+# for image_path in tqdm(os.listdir(image_dir)):
+#     assert os.path.exists(os.path.join(image_dir, image_path)) == True, f"{image_path}"
+    text = get_model_output(device, model, image_path, language=f"{language}")
+    
+    return text
+
 # if __name__ == '__main__':
 #     fire.Fire(main)
