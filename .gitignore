@@ -12,7 +12,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-requirements/core.*.txt
+# requirements/core.*.txt
 .Python
 build/
 develop-eggs/
