@@ -38,7 +38,7 @@ def load_model(device, checkpoint):
     model = load_from_checkpoint(checkpoint).eval().to(device)
     return model
 
-def get_model_output(device, model, image_path, language):
+def get_model_output(device, model, image_path):
     hp = model.hparams
     transform = get_transform(hp.img_size, rotation=0)
 
@@ -106,12 +106,35 @@ def bstr_onImage(checkpoint, language, image_path):
     else:
         model = torch.hub.load('baudm/parseq', 'parseq', pretrained=True).eval().to(device)
 
-# parseq_dict = {}
-# for image_path in tqdm(os.listdir(image_dir)):
-#     assert os.path.exists(os.path.join(image_dir, image_path)) == True, f"{image_path}"
+    # parseq_dict = {}
+    # for image_path in tqdm(os.listdir(image_dir)):
+    #     assert os.path.exists(os.path.join(image_dir, image_path)) == True, f"{image_path}"
     text = get_model_output(device, model, image_path, language=f"{language}")
     
     return text
 
+
+def recogniser(checkpoint: str, image_path: str) -> str:
+    """
+    Loads the desired model and returns the recognized word from the specified image.
+
+    Args:
+        checkpoint (str): Path to the model checkpoint file.
+        language (str): Language code (e.g., 'hindi', 'english').
+        image_path (str): Path to the image for which text recognition is needed.
+
+    Returns:
+        str: The recognized text from the image.
+    """
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+    if language != "english":
+        model = load_model(device, checkpoint)
+    else:
+        model = torch.hub.load('baudm/parseq', 'parseq', pretrained=True).eval().to(device)
+
+    recognized_text = get_model_output(device, model, image_path)
+    
+    return recognized_text
 # if __name__ == '__main__':
 #     fire.Fire(main)

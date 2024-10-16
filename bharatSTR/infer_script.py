@@ -7,7 +7,7 @@ import requests
 
 # Model information dictionary containing model paths and language subcategories
 model_info = {
-    "hineng": {
+    "hindi": {
         "path": "models/clip_finetuned_hindienglish_real.pth",
         "url" : "https://github.com/anikde/STscriptdetect/releases/download/V1/clip_finetuned_hindienglish_real.pth",
         "subcategories": ["hindi", "english"]
