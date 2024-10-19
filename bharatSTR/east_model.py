@@ -2,8 +2,8 @@
 import torch.nn as nn
 import math
 import torch
-from . import config as cfg
-from . import utils
+import east_config as cfg
+import east_utils as utils
 
 
 def conv_bn(inp, oup, stride):

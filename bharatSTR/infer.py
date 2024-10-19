@@ -114,7 +114,7 @@ def bstr_onImage(checkpoint, language, image_path):
     return text
 
 
-def recogniser(checkpoint: str, image_path: str) -> str:
+def recogniser(checkpoint: str, image_path: str, language: str) -> str:
     """
     Loads the desired model and returns the recognized word from the specified image.
 
@@ -129,7 +129,7 @@ def recogniser(checkpoint: str, image_path: str) -> str:
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     if language != "english":
-        model = load_model(device, checkpoint)
+        model = load_model(device, f"models/{checkpoint}.ckpt")
     else:
         model = torch.hub.load('baudm/parseq', 'parseq', pretrained=True).eval().to(device)
 

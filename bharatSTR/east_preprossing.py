@@ -6,8 +6,8 @@ import cv2
 import os
 import numpy as np
 from shapely.geometry import Polygon
-from . import config as cfg
-from . import utils
+import east_config as cfg
+import east_utils
 
 
 def get_images(img_root):

@@ -4,9 +4,9 @@ import cv2
 import numpy as np
 import time
 import warnings
-from . import config as cfg
-from .model import East
-from . import utils
+import east_config as cfg
+from east_model import East
+import east_utils as utils
 
 # Suppress warnings
 warnings.filterwarnings("ignore")

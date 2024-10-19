@@ -173,22 +173,22 @@ def predict(image_path, model_name):
         _, predicted_idx = torch.max(outputs, 1)
         predicted_class = subcategories[predicted_idx.item()]
 
-        return {"predicted_class": predicted_class}
+        return predicted_class
 
     except Exception as e:
         return {"error": str(e)}
 
 
-if __name__ == "__main__":
-    import argparse
+# if __name__ == "__main__":
+#     import argparse
 
-    # Argument parser for command line usage
-    parser = argparse.ArgumentParser(description="Image classification using CLIP fine-tuned model")
-    parser.add_argument("image_path", type=str, help="Path to the input image")
-    parser.add_argument("model_name", type=str, choices=model_info.keys(), help="Name of the model (e.g., hineng, hinengpun, hinengguj)")
+#     # Argument parser for command line usage
+#     parser = argparse.ArgumentParser(description="Image classification using CLIP fine-tuned model")
+#     parser.add_argument("image_path", type=str, help="Path to the input image")
+#     parser.add_argument("model_name", type=str, choices=model_info.keys(), help="Name of the model (e.g., hineng, hinengpun, hinengguj)")
 
-    args = parser.parse_args()
+#     args = parser.parse_args()
 
-    # Execute prediction with command line inputs
-    result = predict(args.image_path, args.model_name)
-    print(result)
+#     # Execute prediction with command line inputs
+#     result = predict(args.image_path, args.model_name)
+#     print(result)

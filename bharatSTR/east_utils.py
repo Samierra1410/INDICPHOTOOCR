@@ -1,13 +1,13 @@
 
 import torch
 import os
-from . import config as cfg
+import east_config as cfg
 from torch.nn import init
 import cv2
 import numpy as np
 import time
-from . import preprossing
-from . import locality_aware_nms
+import east_preprossing as preprossing
+import east_locality_aware_nms as locality_aware_nms
 
 
 def init_weights(m_list, init_type=cfg.init_type, gain=0.02):
