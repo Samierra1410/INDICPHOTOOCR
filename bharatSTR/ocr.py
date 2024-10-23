@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, '/DATA/ocr_team_2/anik/github_repo/bharatSTR/bharatSTR') 
+# sys.path.insert(1, '/DATA/ocr_team_2/anik/github_repo/bharatSTR/bharatSTR') 
 import os
 import torch
 from PIL import Image
@@ -87,8 +87,8 @@ class OCR:
         return recognized_words
 
 if __name__ == '__main__':
-    detect_model_checkpoint = '/DATA/ocr_team_2/anik/github_repo/BharatSTR/bharatSTR/East/tmp/epoch_990_checkpoint.pth.tar'
-    sample_image_path = '/DATA/ocr_team_2/anik/splitonBSTD/bstd/detection/D/image_371.jpg'
+    detect_model_checkpoint = '/DATA1/ocrteam/anik/git/BharatSTR/bharatSTR/East/tmp/epoch_990_checkpoint.pth.tar'
+    sample_image_path = '/DATA1/ocrteam/anik/git/BharatSTR/bharatSTR/demo_images/image_141.jpg'
     ocr = OCR(detect_model_checkpoint, sample_image_path)
 
     recognitions = ocr.ocr(sample_image_path)

@@ -26,6 +26,7 @@ make torch-${platform}
 pip install -r requirements/core.${platform}.txt -e .[train,test]
 pip install fire==0.6.0
 pip install numpy==1.26.4
+pip install openai-clip==1.0.1
 ```
 Tested on CUDA 11.7 with python 3.9.
 

@@ -17,7 +17,7 @@ min_text_size = 10
 min_crop_side_ratio = 0.1
 means=[100, 100, 100]
 pretrained = True  # 是否加载基础网络的预训练模型
-pretrained_basemodel_path = 'East/tmp/backbone_net/mobilenet_v2.pth.tar'
+pretrained_basemodel_path = '/DATA/ocr_team_2/anik/github_repo/BharatSTR/bharatSTR/East/tmp/backbone_net/mobilenet_v2.pth.tar'
 pre_lr = 1e-4  # 基础网络的初始学习率
 lr = 1e-3  # 后面网络的初始学习率
 decay_steps = 50  # decayed_learning_rate = learning_rate * decay_rate ^ (global_epoch / decay_steps)
