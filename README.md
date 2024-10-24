@@ -5,6 +5,9 @@ Currently we need to manually create virtual environemnt.
 ```python
 conda create -n bharatocr python=3.9 -y
 conda activate bharatocr
+
+
+git clone https://github.com/Bhashini-IITJ/BharatSTR.git
 cd bharatSTR
 
 pip install pip-tools
@@ -17,15 +20,15 @@ make torch-${platform}
 pip install -r requirements/core.${platform}.txt -e .[train,test]
 pip install openai-clip==1.0.1
 
-cd ..
+cd <project_root>
 python setup.py sdist bdist_wheel
 ```
 
 ## Config
 Currently this model works for hindi v/s english script identification and thereby hindi and english recognition.
 
-Detection Model: EAST
-ScripIndetification Model: Hindi v/s English
+Detection Model: EAST\
+ScripIndetification Model: Hindi v/s English\
 Recognition Model: Hindi, English 
 
 ## How to use
@@ -49,7 +52,7 @@ ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
 # 'मण्डी'
 
 # Complete pipeline
-results = ocr_system.ocr("/DATA1/ocrteam/anik/git/BharatSTR/demo_images/image_141.jpg")
+results=ocr_system.ocr("/DATA1/ocrteam/anik/git/BharatSTR/demo_images/image_141.jpg")
 # Running text detection...
 # 4334 text boxes before nms
 # 0.9715704917907715
@@ -99,8 +102,11 @@ results = ocr_system.ocr("/DATA1/ocrteam/anik/git/BharatSTR/demo_images/image_14
 
 ```
 
-## Training
+<!-- ## Training -->
 
 ## Acknowledgement 
+
+Text Recognition - [PARseq](https://github.com/baudm/parseq)\
+EAST re-implemenation [repository](https://github.com/foamliu/EAST).
 
 ## Contant
