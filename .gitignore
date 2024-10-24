@@ -149,7 +149,7 @@ cython_debug/
 
 ########## CUSTOM FOLDER ##############
 README_original.md
-demo_images/
+
 results/
 images
 bharatSTR/East/tmp
