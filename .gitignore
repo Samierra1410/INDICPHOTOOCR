@@ -155,5 +155,18 @@ images
 bharatSTR/East/tmp
 bharatSTR/models
 bharatSTR/images
+__pycache__/
+bharatSTR/
+
+bharatOCR/detection/East
+bharatOCR/recognition/models
+
+bharatOCR/script_identification/images
+bharatOCR/script_identification/models
+
+
+build/
+dist/
+
 
 
