@@ -1,4 +1,4 @@
-# BharatSTR
+# BharatOCR
 
 ## Installation
 Currently we need to manually create virtual environemnt.
