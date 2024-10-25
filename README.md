@@ -13,7 +13,7 @@ cd bharatSTR
 pip install pip-tools
 make clean-reqs reqs  # Regenerate all the requirements files
 # Use specific platform build. Other PyTorch 2.0 options: cu118, cu121, rocm5.7
-platform=cpu
+platform=cu118
 # Generate requirements files for specified PyTorch platform
 make torch-${platform}
 # Install the project and core + train + test dependencies. Subsets: [train,test,bench,tune]
@@ -24,7 +24,7 @@ pip install openai-clip==1.0.1
 pip install lmdb==1.5.1
 
 python setup.py sdist bdist_wheel
-pip install dist/bharatOCR-0.2.0-py3-none-any.whl
+pip install dist/bharatOCR-1.0.0-py3-none-any.whl
 ```
 
 ## Config
