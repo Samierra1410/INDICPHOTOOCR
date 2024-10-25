@@ -7,8 +7,8 @@ conda create -n bharatocr python=3.9 -y
 conda activate bharatocr
 
 
-git clone https://github.com/Bhashini-IITJ/BharatSTR.git
-cd bharatSTR
+git clone https://github.com/Bhashini-IITJ/BharatOCR.git
+cd BharatOCR
 
 pip install pip-tools
 make clean-reqs reqs  # Regenerate all the requirements files
