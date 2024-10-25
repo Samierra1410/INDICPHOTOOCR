@@ -20,8 +20,8 @@ make torch-${platform}
 pip install -r requirements/core.${platform}.txt -e .[train,test]
 pip install openai-clip==1.0.1
 
-cd <project_root>
 python setup.py sdist bdist_wheel
+pip install dist/bharatOCR-0.2.0-py3-none-any.whl
 ```
 
 ## Config
@@ -40,7 +40,7 @@ from bharatOCR.ocr import OCR
 ocr_system = OCR()
 
 # Get detections
-detections = ocr_system.detect("demo_images/image_141.jpg")
+ocr_system.detect("demo_images/image_141.jpg")
 # Running text detection...
 # 4334 text boxes before nms
 # 0.9630489349365234
@@ -52,7 +52,7 @@ ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
 # 'मण्डी'
 
 # Complete pipeline
-results=ocr_system.ocr("/DATA1/ocrteam/anik/git/BharatSTR/demo_images/image_141.jpg")
+results=ocr_system.ocr("demo_images/image_141.jpg")
 # Running text detection...
 # 4334 text boxes before nms
 # 0.9715704917907715
