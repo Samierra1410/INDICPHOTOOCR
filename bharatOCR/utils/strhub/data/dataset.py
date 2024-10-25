@@ -24,7 +24,7 @@ from PIL import Image
 
 from torch.utils.data import ConcatDataset, Dataset
 
-from strhub.data.utils import CharsetAdapter
+from bharatOCR.utils.strhub.data.utils import CharsetAdapter
 
 log = logging.getLogger(__name__)
 

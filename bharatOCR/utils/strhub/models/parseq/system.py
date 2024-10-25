@@ -25,7 +25,7 @@ from torch import Tensor
 
 from pytorch_lightning.utilities.types import STEP_OUTPUT
 
-from strhub.models.base import CrossEntropySystem
+from bharatOCR.utils.strhub.models.base import CrossEntropySystem
 
 from .model import PARSeq as Model
 

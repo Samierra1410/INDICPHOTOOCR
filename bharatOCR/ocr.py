@@ -94,9 +94,9 @@ class OCR:
         return recognized_words
 
 if __name__ == '__main__':
-    # detect_model_checkpoint = '/DATA1/ocrteam/anik/git/BharatSTR/bharatSTR/East/tmp/epoch_990_checkpoint.pth.tar'
-    sample_image_path = '/DATA1/ocrteam/anik/git/BharatSTR/demo_images/image_141.jpg'
-    cropped_image_path = '/DATA1/ocrteam/anik/git/BharatSTR/demo_images/cropped_image/image_141_0.jpg'
+    # detect_model_checkpoint = 'bharatSTR/East/tmp/epoch_990_checkpoint.pth.tar'
+    sample_image_path = 'demo_images/image_141.jpg'
+    cropped_image_path = 'demo_images/cropped_image/image_141_0.jpg'
 
     ocr = OCR()
 

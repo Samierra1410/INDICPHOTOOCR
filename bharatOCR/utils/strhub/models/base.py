@@ -30,7 +30,7 @@ import pytorch_lightning as pl
 from pytorch_lightning.utilities.types import STEP_OUTPUT
 from timm.optim import create_optimizer_v2
 
-from strhub.data.utils import BaseTokenizer, CharsetAdapter, CTCTokenizer, Tokenizer
+from bharatOCR.utils.strhub.data.utils import BaseTokenizer, CharsetAdapter, CTCTokenizer, Tokenizer
 
 
 @dataclass
