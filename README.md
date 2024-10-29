@@ -1,4 +1,8 @@
-# BharatOCR
+<h1 align="center"> BharatOCR - Comprehensive OCR Toolkit for Detection, Script Identification, and Recognition in 13 Indian Languages</h1>
+
+
+BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and recognizing text in 13 Indian languages, including Bengali, Hindi, Tamil, Gujarati, and more. Built to handle the unique scripts and complex structures of Indian languages, BharatOCR provides robust detection and recognition capabilities, making it a valuable tool for processing multilingual documents and enhancing document analysis in these diverse scripts.
+
 
 ## Installation
 Currently we need to manually create virtual environemnt.
@@ -35,6 +39,7 @@ ScripIndetification Model: Hindi v/s English\
 Recognition Model: Hindi, English 
 
 ## How to use
+### Detection
 
 ```python
 from bharatOCR.ocr import OCR
@@ -48,7 +53,10 @@ ocr_system.detect("demo_images/image_141.jpg")
 # 4334 text boxes before nms
 # 0.9630489349365234
 # [[[1137, 615], [1333, 615], [1333, 753], [1137, 752]], [[642, 644], [1040, 645], [1039, 753], [642, 752]], [[647, 833], [1034, 834], [1034, 945], [646, 944]], [[1567, 709], [1720, 709], [1720, 777], [1567, 777]], [[1412, 826], [1567, 826], [1566, 886], [1412, 886]], [[305, 800], [453, 800], [453, 855], [305, 854]], [[1419, 686], [1549, 686], [1549, 770], [1419, 770]], [[1124, 843], [1336, 844], [1336, 949], [1124, 948]], [[1571, 831], [1729, 831], [1729, 891], [1571, 891]], [[196, 796], [301, 796], [301, 861], [196, 860]], [[211, 677], [336, 677], [336, 747], [211, 747]], [[350, 679], [447, 679], [447, 749], [350, 749]]]
+```
 
+
+```
 # Get recognitions
 ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
 # Recognizing text in detected area...
