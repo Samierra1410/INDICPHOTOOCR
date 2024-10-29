@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./static/pics/bharatOCR.png" alt="BharatOCR Logo" width="35%">
   <h3 align="center">
- BharatOCR - Comprehensive Scene Text Recognition Toolkit across 13 Indian Languages
+ BharatOCR - Comprehensive Scene Text Recognition Toolkit </br> across 13 Indian Languages
   </h3>
 </p>
 ---
