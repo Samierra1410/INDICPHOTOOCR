@@ -121,3 +121,6 @@ Text Recognition - [PARseq](https://github.com/baudm/parseq)\
 EAST re-implemenation [repository](https://github.com/foamliu/EAST).
 
 ## Contant
+For any queries, please contact us at:
+- [Anik De](mailto:anekde@gmail.com)
+
