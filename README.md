@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-    <img src="./static/pics/bharatOCR.png" alt="Centered image" width="600">
+    <img src="./static/pics/bharatOCR.png" alt="Centered image" width="400">
 </div>
 
 <h1 align="center"> BharatOCR - Comprehensive Scene Text Recognition Toolkit across 13 Indian Languages</h1>
