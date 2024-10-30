@@ -11,9 +11,21 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 ![](contents/bharatocr.gif)
 <hr style="width: 100%; border: 1px solid #000;">
 
-## Updates
-[October 2024] Private repo created. 
+<hr style="width: 100%; border: 1px solid #000;">
 
+## Table of Content
+<li>Updates</li>
+<li>Installation</li>
+<li>How to use</li>
+<li>Ack</li>
+<li>Contact us</li>
+
+<hr style="width: 100%; border: 1px solid #000;">
+
+
+## Updates
+<b>[October 2024]:</b> Private repository created. 
+<hr style="width: 100%; border: 1px solid #000;">
 
 ## Installation
 Currently we need to manually create virtual environemnt.
@@ -131,7 +143,7 @@ results=ocr_system.ocr("demo_images/image_141.jpg")
 Text Recognition - [PARseq](https://github.com/baudm/parseq)\
 EAST re-implemenation [repository](https://github.com/foamliu/EAST).
 [Bhashini](https://bhashini.gov.in/)
-## Contant
+## Contact us
 For any queries, please contact us at:
 - [Anik De](mailto:anekde@gmail.com)
 
