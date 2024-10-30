@@ -22,7 +22,7 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 
 
 ## Updates
-<b>[October 2024]:</b> Private repository created. 
+<b>[September 2024]:</b> Private repository created. 
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Installation
