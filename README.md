@@ -14,11 +14,11 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Table of Content
-<li>Updates</li>
-<li>Installation</li>
-<li>How to use</li>
-<li>Ack</li>
-<li>Contact us</li>
+<li>[Updates](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#updates)</li>
+<li>[Installation](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
+<li>[How to use](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
+<li>[Acknowledgments](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
+<li>[Contact us](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
 
 <hr style="width: 100%; border: 1px solid #000;">
 
