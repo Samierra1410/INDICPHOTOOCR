@@ -9,6 +9,12 @@
 BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and recognizing text across 13 Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Meitei Odia, Punjabi, Tamil, Telugu, Urdu, and English. Built to handle the unique scripts and complex structures of Indian languages, BharatOCR provides robust detection and recognition capabilities, making it a valuable tool for processing multilingual documents and enhancing document analysis in these diverse scripts.
 
 ![](contents/bharatocr.gif)
+<hr style="width: 100%; border: 1px solid #000;">
+
+## Updates
+[October 2024] Private repo created. 
+
+
 ## Installation
 Currently we need to manually create virtual environemnt.
 ```python
@@ -124,7 +130,7 @@ results=ocr_system.ocr("demo_images/image_141.jpg")
 
 Text Recognition - [PARseq](https://github.com/baudm/parseq)\
 EAST re-implemenation [repository](https://github.com/foamliu/EAST).
-
+[Bhashini](https://bhashini.gov.in/)
 ## Contant
 For any queries, please contact us at:
 - [Anik De](mailto:anekde@gmail.com)
