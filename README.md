@@ -49,7 +49,7 @@ pip install openai-clip==1.0.1
 pip install lmdb==1.5.1
 
 python setup.py sdist bdist_wheel
-pip install dist/bharatOCR-1.0.0-py3-none-any.whl
+pip install dist/bharatOCR-1.0.1-py3-none-any.whl
 ```
 
 ## Config
@@ -63,26 +63,39 @@ Recognition Model: Hindi, English
 ### Detection
 
 ```python
-from bharatOCR.ocr import OCR
-
+>>> from bharatOCR.ocr import OCR
 # Create an object of OCR
-ocr_system = OCR()
+>>> ocr_system = OCR()
 
 # Get detections
-ocr_system.detect("demo_images/image_141.jpg")
+>>> detections = ocr_system.detect("demo_images/image_141.jpg")
+
 # Running text detection...
 # 4334 text boxes before nms
-# 0.9630489349365234
-# [[[1137, 615], [1333, 615], [1333, 753], [1137, 752]], [[642, 644], [1040, 645], [1039, 753], [642, 752]], [[647, 833], [1034, 834], [1034, 945], [646, 944]], [[1567, 709], [1720, 709], [1720, 777], [1567, 777]], [[1412, 826], [1567, 826], [1566, 886], [1412, 886]], [[305, 800], [453, 800], [453, 855], [305, 854]], [[1419, 686], [1549, 686], [1549, 770], [1419, 770]], [[1124, 843], [1336, 844], [1336, 949], [1124, 948]], [[1571, 831], [1729, 831], [1729, 891], [1571, 891]], [[196, 796], [301, 796], [301, 861], [196, 860]], [[211, 677], [336, 677], [336, 747], [211, 747]], [[350, 679], [447, 679], [447, 749], [350, 749]]]
+# 1.027989387512207
+
+# Save and visualize the detection results
+>>> ocr_system.visualize_detection("demo_images/image_141.jpg", detections)
+# Image saved at: test.png
 ```
 
+## Recognition
+```python
+>>> from bharatOCR.ocr import OCR
+# Create an object of OCR
+>>> ocr_system = OCR()
 
-```
 # Get recognitions
 ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
 # Recognizing text in detected area...
 # 'मण्डी'
+```
 
+## Detection + Recognition
+```python
+>>> from bharatOCR.ocr import OCR
+# Create an object of OCR
+>>> ocr_system = OCR()
 # Complete pipeline
 results=ocr_system.ocr("demo_images/image_141.jpg")
 # Running text detection...
