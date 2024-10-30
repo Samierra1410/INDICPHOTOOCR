@@ -14,11 +14,12 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Table of Content
-<li>[Updates](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#updates)</li>
-<li>[Installation](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
-<li>[How to use](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
-<li>[Acknowledgments](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
-<li>[Contact us](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)</li>
+[updates]
+[Updates](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#updates)</br>
+[Installation](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)<br>
+[How to use](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#how-to-use)</br>
+[Acknowledgement](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#acknowledgement)</br>
+[Contact us](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#contact-us)</br>
 
 <hr style="width: 100%; border: 1px solid #000;">
 
@@ -138,10 +139,10 @@ results=ocr_system.ocr("demo_images/image_141.jpg")
 
 <!-- ## Training -->
 
-## Acknowledgement 
+## Acknowledgement
 
 Text Recognition - [PARseq](https://github.com/baudm/parseq)\
-EAST re-implemenation [repository](https://github.com/foamliu/EAST).
+EAST re-implemenation [repository](https://github.com/foamliu/EAST).<br/>
 [Bhashini](https://bhashini.gov.in/)
 ## Contact us
 For any queries, please contact us at:
