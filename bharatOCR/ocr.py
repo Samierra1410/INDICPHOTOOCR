@@ -2,6 +2,8 @@ import sys
 import os
 import torch
 from PIL import Image
+import cv2
+import numpy as np
 
 
 from bharatOCR.detection.east_detector import EASTdetector
@@ -25,6 +27,39 @@ class OCR:
         detections = self.detector.detect(image_path, detect_model_checkpoint, self.device)
         # print(detections)
         return detections['detections']
+
+    def visualize_detection(self, image_path, detections, save_path=None, show=False):
+        # Default save path if none is provided
+        default_save_path = "test.png"
+        path_to_save = save_path if save_path is not None else default_save_path
+
+        # Get the directory part of the path
+        directory = os.path.dirname(path_to_save)
+        
+        # Check if the directory exists, and create it if it doesn’t
+        if directory and not os.path.exists(directory):
+            os.makedirs(directory)
+            print(f"Created directory: {directory}")
+
+        # Read the image and draw bounding boxes
+        image = cv2.imread(image_path)
+        for box in detections:
+            # Convert list of points to a numpy array with int type
+            points = np.array(box, np.int32)
+            points = points.reshape((-1, 1, 2))  # Reshape for cv2.polylines
+            # Draw the polygon
+            cv2.polylines(image, [points], isClosed=True, color=(0, 255, 0), thickness=3)
+
+        # Show the image if 'show' is True
+        if show:
+            plt.figure(figsize=(10, 10))
+            plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+            plt.axis("off")
+            plt.show()
+
+        # Save the annotated image
+        cv2.imwrite(path_to_save, image)
+        print(f"Image saved at: {path_to_save}")
 
     def crop_and_identify_script(self, image, bbox):
         """
@@ -103,8 +138,10 @@ if __name__ == '__main__':
     detections = ocr.detect(sample_image_path)
     print(detections)
 
-    recognition = ocr.recognise(cropped_image_path, "hindi")
-    print(recognition)
+    ocr.visualize_detection(sample_image_path, detections)
 
-    recognised_words = ocr.ocr(sample_image_path)
-    print(recognised_words)
+    # recognition = ocr.recognise(cropped_image_path, "hindi")
+    # print(recognition)
+
+    # recognised_words = ocr.ocr(sample_image_path)
+    # print(recognised_words)
