@@ -140,8 +140,8 @@ if __name__ == '__main__':
 
     ocr.visualize_detection(sample_image_path, detections)
 
-    # recognition = ocr.recognise(cropped_image_path, "hindi")
-    # print(recognition)
+    recognition = ocr.recognise(cropped_image_path, "hindi")
+    print(recognition)
 
-    # recognised_words = ocr.ocr(sample_image_path)
-    # print(recognised_words)
+    recognised_words = ocr.ocr(sample_image_path)
+    print(recognised_words)
