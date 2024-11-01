@@ -51,3 +51,4 @@ shapely==2.0.6
 openai-clip==1.0.1
 lmdb==1.5.1
 six==1.16.0
+pytz==2024.2
