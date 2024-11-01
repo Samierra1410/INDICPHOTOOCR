@@ -50,7 +50,7 @@ pip install openai-clip==1.0.1
 pip install lmdb==1.5.1
 
 python setup.py sdist bdist_wheel
-pip install dist/bharatOCR-1.0.1-py3-none-any.whl
+pip install dist/bharatOCR-1.0.*-py3-none-any.whl
 ```
 
 ## Config
