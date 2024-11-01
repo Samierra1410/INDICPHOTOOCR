@@ -50,3 +50,4 @@ opencv-python==4.10.0.84
 shapely==2.0.6
 openai-clip==1.0.1
 lmdb==1.5.1
+six==1.16.0
