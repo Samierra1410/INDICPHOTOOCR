@@ -21,9 +21,41 @@ from bharatOCR.utils.strhub.models.utils import load_from_checkpoint
 
 
 model_info = {
+    "assamese": {
+        "path": "models/assamese.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/assamese.ckpt",
+    },
+    "bengali": {
+        "path": "models/bengali.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/bengali.ckpt",
+    },
     "hindi": {
         "path": "models/hindi.ckpt",
         "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/hindi.ckpt",
+    },
+    "gujarati": {
+        "path": "models/gujarati.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/gujarati.ckpt",
+    },
+    "marathi": {
+        "path": "models/marathi.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/marathi.ckpt",
+    },
+    "odia": {
+        "path": "models/odia.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/odia.ckpt",
+    },
+    "punjabi": {
+        "path": "models/punjabi.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/punjabi.ckpt",
+    },
+    "tamil": {
+        "path": "models/tamil.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/tamil.ckpt",
+    },
+    "telugu": {
+        "path": "models/telugu.ckpt",
+        "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/telugu.ckpt",
     }
 }
 
@@ -74,12 +106,25 @@ class PARseqrecogniser:
         
         if not os.path.exists(model_path):
             print(f"Model not found locally. Downloading {model_name} from {url}...")
+            
+            # Start the download with a progress bar
             response = requests.get(url, stream=True)
+            total_size = int(response.headers.get('content-length', 0))
             os.makedirs(f"{root_model_dir}/models", exist_ok=True)
-            with open(f"{model_path}", "wb") as f:
-                f.write(response.content)
+            
+            with open(model_path, "wb") as f, tqdm(
+                    desc=model_name,
+                    total=total_size,
+                    unit='B',
+                    unit_scale=True,
+                    unit_divisor=1024,
+            ) as bar:
+                for data in response.iter_content(chunk_size=1024):
+                    f.write(data)
+                    bar.update(len(data))
+
             print(f"Downloaded model for {model_name}.")
-        
+            
         return model_path
 
     def bstr(checkpoint, language, image_dir, save_dir):

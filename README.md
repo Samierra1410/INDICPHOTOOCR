@@ -22,7 +22,8 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 
 
 ## Updates
-<b>[September 2024]:</b> Private repository created. 
+<b>[September 2024]:</b> Private repository created.
+<b>[November 2024]:</b> Added language support for 9 additional models in the recognition module. 
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Installation
