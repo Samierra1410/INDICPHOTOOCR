@@ -22,8 +22,8 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 
 
 ## Updates
+<b>[November 2024]:</b> Added support for 9 languages in the recognition module. 
 <b>[September 2024]:</b> Private repository created.\
-<b>[November 2024]:</b> Added language support for 9 additional models in the recognition module. 
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Installation
@@ -80,7 +80,7 @@ Recognition Model: Hindi, English
 # Image saved at: test.png
 ```
 
-## Recognition
+## Cropped Word Recognition
 ```python
 >>> from bharatOCR.ocr import OCR
 # Create an object of OCR
@@ -92,7 +92,7 @@ ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
 # 'मण्डी'
 ```
 
-## Detection + Recognition
+## End-to-end Scene Text Recognition
 ```python
 >>> from bharatOCR.ocr import OCR
 # Create an object of OCR
