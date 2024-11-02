@@ -82,10 +82,8 @@ Recognition Model: Hindi, English
 
 ## Cropped Word Recognition
 ```python
->>> from bharatOCR.ocr import OCR
-# Create an object of OCR
+>>> from bharatOCR.ocr import OCR #Create an object of OCR
 >>> ocr_system = OCR()
-
 # Get recognitions
 ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
 # Recognizing text in detected area...
