@@ -45,22 +45,21 @@ setup(
         'safetensors==0.4.5',
         'sympy==1.13.1',
         'timm==1.0.11',
-        'torch==2.5.0+cu118',
         'torchmetrics==1.5.1',
-        'torchvision==0.20.0+cu118',
         'tqdm==4.66.5',
         'typing-extensions==4.12.2',
         'urllib3==2.2.3',
         'yarl==1.16.0',
+        'opencv-python==4.10.0.84',
+        'shapely==2.0.6',
+        'openai-clip==1.0.1',
+        'lmdb==1.5.1'
+
     ],
     extras_require={
         'cu118': [
             'torch==2.5.0+cu118',
             'torchvision==0.20.0+cu118',
-            'opencv-python==4.10.0.84',
-            'shapely==2.0.6',
-            'openai-clip==1.0.1',
-            'lmdb==1.5.1',
             # Any additional packages specific to cu118
         ],
         'cu121': [
