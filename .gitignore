@@ -168,5 +168,7 @@ bharatOCR/script_identification/models
 build/
 dist/
 test.png
+static/pics/bharatocr.gif
+
 
 
