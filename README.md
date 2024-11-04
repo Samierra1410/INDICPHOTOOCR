@@ -83,7 +83,7 @@ Recognition Model: Hindi, English
 ```python
 >>> from bharatOCR.ocr import OCR
 # Create an object of OCR
->>> ocr_system = OCR()
+>>> ocr_system = OCR() # for CPU --> OCR(device="cpu")
 
 # Get detections
 >>> detections = ocr_system.detect("demo_images/image_141.jpg")
@@ -101,7 +101,7 @@ Recognition Model: Hindi, English
 ```python
 >>> from bharatOCR.ocr import OCR
 # Create an object of OCR
->>> ocr_system = OCR()
+>>> ocr_system = OCR() # for CPU --> OCR(device="cpu")
 
 # Get recognitions
 ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
@@ -113,7 +113,7 @@ ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
 ```python
 >>> from bharatOCR.ocr import OCR
 # Create an object of OCR
->>> ocr_system = OCR()
+>>> ocr_system = OCR() # for CPU --> OCR(device="cpu")
 # Complete pipeline
 results=ocr_system.ocr("demo_images/image_141.jpg")
 # Running text detection...
