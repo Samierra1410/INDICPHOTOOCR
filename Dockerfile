@@ -23,8 +23,8 @@ RUN conda init
 # Reload the env configs
 RUN source ~/.bashrc
 
-# Activate the env 
-RUN conda activate bocr
+# Make RUN commands use the bocr environment
+SHELL ["conda", "run", "-n", "bocr", "/bin/bash", "-c"]
 
 # # Clone BharatOCR repository
 # RUN git clone https://github.com/Bhashini-IITJ/BharatOCR.git && \
