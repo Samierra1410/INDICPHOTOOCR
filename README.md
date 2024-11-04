@@ -41,7 +41,7 @@ cd BharatOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install dist/bharatOCR-1.0.*-py3-none-any.whl[cpu] --extra-index-url https://download.pytorch.org/whl/cpu
+  pip install dist/bharatOCR-1.0.*-py3-none-any.whl[cpu]
   ```
 </details>
 
