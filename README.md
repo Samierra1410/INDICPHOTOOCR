@@ -35,22 +35,39 @@ conda activate bharatocr
 
 git clone https://github.com/Bhashini-IITJ/BharatOCR.git
 cd BharatOCR
+```
+<details>
+  <summary><b>CPU Installation</b></summary>
 
-pip install pip-tools
-make clean-reqs reqs  # Regenerate all the requirements files
-# Use specific platform build. Other PyTorch 2.0 options: cu118, cu121, rocm5.7
-platform=cu118
-# Generate requirements files for specified PyTorch platform
-make torch-${platform}
-# Install the project and core + train + test dependencies. Subsets: [train,test,bench,tune]
-pip install -r requirements/core.${platform}.txt -e .[train,test]
-pip install opencv-python==4.10.0.84
-pip install shapely==2.0.6
-pip install openai-clip==1.0.1
-pip install lmdb==1.5.1
+  ```bash
+  python setup.py sdist bdist_wheel
+  pip install dist/bharatOCR-1.0.*-py3-none-any.whl[cpu] --extra-index-url https://download.pytorch.org/whl/cpu
+  ```
+</details>
 
-python setup.py sdist bdist_wheel
-pip install dist/bharatOCR-1.0.*-py3-none-any.whl
+<details>
+  <summary><b>CUDA 11.8 Installation</b></summary>
+
+  ```bash
+  python setup.py sdist bdist_wheel
+  pip install ./dist/bharatOCR-1.0.*-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
+  ```
+</details>
+
+<details>
+  <summary><b>CUDA 12.1 Installation</b></summary>
+
+  ```bash
+  python setup.py sdist bdist_wheel
+  pip install ./dist/bharatOCR-1.0.*-py3-none-any.whl[cu121] --extra-index-url https://download.pytorch.org/whl/cu121
+  ```
+</details>
+<br>
+
+If you find any trouble with the above installation use the ```setup.sh``` script.
+```bash
+chmod +x setup.sh
+./setup.sh
 ```
 
 ## Config
