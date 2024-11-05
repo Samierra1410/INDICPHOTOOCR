@@ -91,7 +91,7 @@ class OCR:
         # Predict script language, here we assume "hindi" as the model name
         print("Identifying script for the cropped area...")
         script_lang = self.identifier.identify(cropped_path, "hindi")  # Use "hindi" as the model name
-        # print(script_lang)
+        print(script_lang)
 
         # Clean up temporary file
         # os.remove(cropped_path)
@@ -133,15 +133,15 @@ if __name__ == '__main__':
     sample_image_path = 'demo_images/image_141.jpg'
     cropped_image_path = 'demo_images/cropped_image/image_141_0.jpg'
 
-    ocr = OCR()
+    ocr = OCR(device="cpu")
 
-    detections = ocr.detect(sample_image_path)
-    print(detections)
+    # detections = ocr.detect(sample_image_path)
+    # print(detections)
 
-    ocr.visualize_detection(sample_image_path, detections)
+    # ocr.visualize_detection(sample_image_path, detections)
 
-    recognition = ocr.recognise(cropped_image_path, "hindi")
-    print(recognition)
+    # recognition = ocr.recognise(cropped_image_path, "hindi")
+    # print(recognition)
 
     recognised_words = ocr.ocr(sample_image_path)
     print(recognised_words)

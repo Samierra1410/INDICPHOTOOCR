@@ -4,6 +4,7 @@ from PIL import Image
 from io import BytesIO
 import os
 import requests
+from tqdm import tqdm
 
 # Model information dictionary containing model paths and language subcategories
 model_info = {
@@ -173,13 +174,16 @@ class CLIPidentifier:
             # Ensure the model file is downloaded and accessible
             model_path = self.ensure_model(model_name)
 
-
             subcategories = model_info[model_name]["subcategories"]
             num_classes = len(subcategories)
 
             # Load the fine-tuned model with the specified number of classes
-            model_ft = CLIPFineTuner(clip_model, num_classes)
-            model_ft.load_state_dict(torch.load(model_path, map_location=device))
+            try:
+                model_ft.load_state_dict(torch.load(model_path, map_location=device))
+            except:
+                break
+                print(f"Model couldn't download. Remove the model at {model_path} and restart the program")
+
             model_ft = model_ft.to(device)
             model_ft.eval()
 
