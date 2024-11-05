@@ -181,9 +181,9 @@ class CLIPidentifier:
             try:
                 model_ft.load_state_dict(torch.load(model_path, map_location=device))
             except:
-                break
                 print(f"Model couldn't download. Remove the model at {model_path} and restart the program")
-
+                break
+                
             model_ft = model_ft.to(device)
             model_ft.eval()
 
