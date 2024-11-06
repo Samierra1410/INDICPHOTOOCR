@@ -1,10 +1,10 @@
+
 import torch
 import clip
 from PIL import Image
 from io import BytesIO
 import os
 import requests
-from tqdm import tqdm
 
 # Model information dictionary containing model paths and language subcategories
 model_info = {
@@ -129,25 +129,12 @@ class CLIPidentifier:
         
         if not os.path.exists(model_path):
             print(f"Model not found locally. Downloading {model_name} from {url}...")
-            
-            # Start the download with a progress bar
             response = requests.get(url, stream=True)
-            total_size = int(response.headers.get('content-length', 0))
             os.makedirs(f"{root_model_dir}/models", exist_ok=True)
-            
-            with open(model_path, "wb") as f, tqdm(
-                    desc=model_name,
-                    total=total_size,
-                    unit='B',
-                    unit_scale=True,
-                    unit_divisor=1024,
-            ) as bar:
-                for data in response.iter_content(chunk_size=1024):
-                    f.write(data)
-                    bar.update(len(data))
-
+            with open(f"{model_path}", "wb") as f:
+                f.write(response.content)
             print(f"Downloaded model for {model_name}.")
-            
+        
         return model_path
 
     # Prediction function to verify and load the model
@@ -174,15 +161,13 @@ class CLIPidentifier:
             # Ensure the model file is downloaded and accessible
             model_path = self.ensure_model(model_name)
 
+
             subcategories = model_info[model_name]["subcategories"]
             num_classes = len(subcategories)
 
             # Load the fine-tuned model with the specified number of classes
-            try:
-                model_ft.load_state_dict(torch.load(model_path, map_location=device))
-            except:
-                return {"error": f"Model could not be loaded. Please check the model file at {model_path}."}
-                
+            model_ft = CLIPFineTuner(clip_model, num_classes)
+            model_ft.load_state_dict(torch.load(model_path, map_location=device))
             model_ft = model_ft.to(device)
             model_ft.eval()
 

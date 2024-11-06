@@ -25,7 +25,7 @@ class OCR:
     def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
         """Run the detection model to get bounding boxes of text areas."""
         print("Running text detection...")
-        detections = self.detector.detect(image_path, detect_model_checkpoint, self.device, self.verbose)
+        detections = self.detector.detect(image_path, detect_model_checkpoint, self.device)
         # print(detections)
         return detections['detections']
 
