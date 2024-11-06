@@ -75,7 +75,7 @@ Currently this model works for hindi v/s english script identification and there
 
 Detection Model: EAST\
 ScripIndetification Model: Hindi v/s English\
-Recognition Model: Hindi, English 
+Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, Punjabi, Tamil, Telugu.
 
 ## How to use
 ### Detection
