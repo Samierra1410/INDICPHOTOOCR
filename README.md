@@ -22,7 +22,7 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 
 
 ## Updates
-<b>[November 2024]:</b> Added support for 10 languages (ASS, BEN, ENG, GUJ, HIN, MAR, ODI, PUN TAM, TEL) in the recognition module.</br>
+<b>[November 2024]:</b> Added support for [10 languages](#config) in the recognition module.</br>
 <b>[September 2024]:</b> Private repository created.
 <hr style="width: 100%; border: 1px solid #000;">
 
