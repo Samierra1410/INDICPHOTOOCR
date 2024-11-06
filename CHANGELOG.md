@@ -7,4 +7,8 @@
 
 ## [1.0.2] - 2024-11-01
 ### Added
-- Added language support for 9 additional models in the recognition module.
+- Added language support for 10 additional models in the recognition module.
+
+## [1.0.3] - 2024-11-06
+### Added
+- Python package requirements sorted with setup.py
