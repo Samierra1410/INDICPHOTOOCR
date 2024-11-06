@@ -13,9 +13,10 @@ import bharatOCR.detection.east_config as cfg
 
 
 class OCR:
-    def __init__(self, device='cuda:0'):
+    def __init__(self, device='cuda:0', verbose=False):
         # self.detect_model_checkpoint = detect_model_checkpoint
         self.device = device
+        self.verbose = verbose
         # self.image_path = image_path
         self.detector = EASTdetector()
         self.recogniser = PARseqrecogniser()
@@ -24,7 +25,7 @@ class OCR:
     def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
         """Run the detection model to get bounding boxes of text areas."""
         print("Running text detection...")
-        detections = self.detector.detect(image_path, detect_model_checkpoint, self.device)
+        detections = self.detector.detect(image_path, detect_model_checkpoint, self.device, self.verbose)
         # print(detections)
         return detections['detections']
 
@@ -133,7 +134,7 @@ if __name__ == '__main__':
     sample_image_path = 'demo_images/image_141.jpg'
     cropped_image_path = 'demo_images/cropped_image/image_141_0.jpg'
 
-    ocr = OCR(device="cpu")
+    ocr = OCR(device="cpu", verbose=True)
 
     # detections = ocr.detect(sample_image_path)
     # print(detections)
