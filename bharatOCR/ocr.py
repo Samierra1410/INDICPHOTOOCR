@@ -24,7 +24,9 @@ class OCR:
 
     def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
         """Run the detection model to get bounding boxes of text areas."""
-        print("Running text detection...")
+
+        if self.verbose:
+            print("Running text detection...")
         detections = self.detector.detect(image_path, detect_model_checkpoint, self.device)
         # print(detections)
         return detections['detections']
@@ -90,9 +92,10 @@ class OCR:
         cropped_image.save(cropped_path)
 
         # Predict script language, here we assume "hindi" as the model name
-        print("Identifying script for the cropped area...")
+        if self.verbose:
+            print("Identifying script for the cropped area...")
         script_lang = self.identifier.identify(cropped_path, "hindi")  # Use "hindi" as the model name
-        print(script_lang)
+        # print(script_lang)
 
         # Clean up temporary file
         # os.remove(cropped_path)
@@ -101,8 +104,9 @@ class OCR:
 
     def recognise(self, cropped_image_path, script_lang):
         """Recognize text in a cropped image area using the identified script."""
-        print("Recognizing text in detected area...")
-        recognized_text = self.recogniser.recognise(script_lang, cropped_image_path, script_lang)
+        if self.verbose:
+            print("Recognizing text in detected area...")
+        recognized_text = self.recogniser.recognise(script_lang, cropped_image_path, script_lang, self.verbose)
         # print(recognized_text)
         return recognized_text
 
@@ -125,7 +129,9 @@ class OCR:
                 # Recognize text
                 recognized_word = self.recognise(cropped_path, script_lang)
                 recognized_words.append(recognized_word)
-                print(f"Recognized word: {recognized_word}")
+
+                if self.verbose:
+                    print(f"Recognized word: {recognized_word}")
 
         return recognized_words
 
@@ -134,7 +140,7 @@ if __name__ == '__main__':
     sample_image_path = 'demo_images/image_141.jpg'
     cropped_image_path = 'demo_images/cropped_image/image_141_0.jpg'
 
-    ocr = OCR(device="cpu", verbose=True)
+    ocr = OCR(device="cpu", verbose=False)
 
     # detections = ocr.detect(sample_image_path)
     # print(detections)

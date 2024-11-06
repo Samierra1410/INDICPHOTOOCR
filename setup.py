@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="bharatOCR",
-    version="1.0.2",
-    description="An OCR package for detection, script identification, and text recognition in Indian scripts",
+    version="1.0.3",
+    description="Scene Text Recognition Toolkit across 13 Indian Languages which contains detection, script identification, and text recognition modules",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.md").read(),
     long_description_content_type="text/markdown",
     author="Anik De",
