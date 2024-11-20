@@ -4,8 +4,6 @@
  BharatOCR - Comprehensive Scene Text Recognition Toolkit </br> across 13 Indian Languages
   </h3>
 </p>
-<hr style="width: 100%; border: 1px solid #000;">
-
 <div align="center">
 
 ![Open Source](https://img.shields.io/badge/Open%20Source-Bhashini-FF9C33)
@@ -14,6 +12,9 @@
 ![GitHub forks](https://img.shields.io/github/forks/Bhashini-IITJ/BharatOCR?style=social)
 
 </div>
+<hr style="width: 100%; border: 1px solid #000;">
+
+
 
 
 BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and recognizing text across 13 Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Meitei Odia, Punjabi, Tamil, Telugu, Urdu, and English. Built to handle the unique scripts and complex structures of Indian languages, BharatOCR provides robust detection and recognition capabilities, making it a valuable tool for processing multilingual documents and enhancing document analysis in these diverse scripts.
