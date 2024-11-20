@@ -6,7 +6,7 @@
 </p>
 <div align="center">
 
-![Open Source](https://img.shields.io/badge/Open%20Source-Bhashini-FF9C33)
+![Open Source](https://img.shields.io/badge/Open%20Source-Bhashini-EE920C)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FBhashini-IITJ%2FBharatOCR&count_bg=%233D48C8&title_bg=%23555555&icon=&icon_color=%0C0983&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![GitHub stars](https://img.shields.io/github/stars/Bhashini-IITJ/BharatOCR.svg?style=social&label=Star&color=orange)](https://github.com/Bhashini-IITJ/BharatOCR/stargazers)
 ![GitHub forks](https://img.shields.io/github/forks/Bhashini-IITJ/BharatOCR?style=social)
