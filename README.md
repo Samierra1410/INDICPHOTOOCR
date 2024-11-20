@@ -33,7 +33,7 @@ BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and re
 
 
 ## Updates
-<b>[November 2024]:</b> Try demo in [huggingface space](https://huggingface.co/spaces/anikde/BharatOCR)
+<b>[November 2024]:</b> Try demo in [huggingface space](https://huggingface.co/spaces/anikde/BharatOCR).\
 <b>[November 2024]:</b> Use this package in [Google Colab](https://colab.research.google.com/drive/1BILXjUF2kKKrzUJ_evubgLHl2busPiH2?usp=sharing).\
 <b>[November 2024]:</b> Added support for [10 languages](#config) in the recognition module.</br>
 <b>[September 2024]:</b> Private repository created.
