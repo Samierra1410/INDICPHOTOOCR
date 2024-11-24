@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./static/pics/ipoLogo.png" alt="IndicPhotoOCR Logo" width="25%">
+  <img src="./static/pics/IndicPhotoOCR_LOGO.png" alt="IndicPhotoOCR Logo" width="45%">
   <h3 align="center">
 IndicPhotoOCR - Comprehensive Scene Text Recognition Toolkit </br> across 13 Indian Languages
   </h3>
