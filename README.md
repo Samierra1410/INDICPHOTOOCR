@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./static/pics/bharatOCR.png" alt="BharatOCR Logo" width="25%">
   <h3 align="center">
- BharatOCR - Comprehensive Scene Text Recognition Toolkit </br> across 13 Indian Languages
+IndicPhotoOCR - Comprehensive Scene Text Recognition Toolkit </br> across 13 Indian Languages
   </h3>
 </p>
 <div align="center">
@@ -19,7 +19,7 @@
 
 
 
-BharatOCR is an advanced OCR toolkit designed for detecting, identifying, and recognizing text across 13 Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Meitei Odia, Punjabi, Tamil, Telugu, Urdu, and English. Built to handle the unique scripts and complex structures of Indian languages, BharatOCR provides robust detection and recognition capabilities, making it a valuable tool for processing multilingual documents and enhancing document analysis in these diverse scripts.
+IndicPhotoOCR is an advanced OCR toolkit designed for detecting, identifying, and recognizing text across 13 Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Meitei Odia, Punjabi, Tamil, Telugu, Urdu, and English. Built to handle the unique scripts and complex structures of Indian languages, IndicPhotoOCR provides robust detection and recognition capabilities, making it a valuable tool for processing multilingual documents and enhancing document analysis in these diverse scripts.
 
 ![](static/pics/visualizeBharatOCR.png)
 <hr style="width: 100%; border: 1px solid #000;">
@@ -48,15 +48,15 @@ conda create -n bharatocr python=3.9 -y
 conda activate bharatocr
 
 
-git clone https://github.com/Bhashini-IITJ/BharatOCR.git
-cd BharatOCR
+git clone https://github.com/Bhashini-IITJ/IndicPhotoOCR.git
+cd IndicPhotoOCR
 ```
 <details>
   <summary><b>CPU Installation</b></summary>
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install dist/bharatOCR-1.0.3-py3-none-any.whl[cpu]
+  pip install dist/IndicPhotoOCR-1.0.3-py3-none-any.whl[cpu]
   ```
 </details>
 
@@ -65,7 +65,7 @@ cd BharatOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install ./dist/bharatOCR-1.0.3-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
+  pip install ./dist/IndicPhotoOCR-1.0.3-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
   ```
 </details>
 
@@ -74,7 +74,7 @@ cd BharatOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install ./dist/bharatOCR-1.0.3-py3-none-any.whl[cu121] --extra-index-url https://download.pytorch.org/whl/cu121
+  pip install ./dist/IndicPhotoOCR-1.0.3-py3-none-any.whl[cu121] --extra-index-url https://download.pytorch.org/whl/cu121
   ```
 </details>
 <br>
@@ -96,7 +96,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 ### Detection
 
 ```python
->>> from bharatOCR.ocr import OCR
+>>> from IndicPhotoOCR.ocr import OCR
 # Create an object of OCR
 >>> ocr_system = OCR(verbose=True) # for CPU --> OCR(device="cpu")
 
@@ -114,7 +114,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 
 ## Cropped Word Recognition
 ```python
->>> from bharatOCR.ocr import OCR
+>>> from IndicPhotoOCR.ocr import OCR
 # Create an object of OCR
 >>> ocr_system = OCR(verbose=True) # for CPU --> OCR(device="cpu")
 # Get recognitions
@@ -125,7 +125,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 
 ## End-to-end Scene Text Recognition
 ```python
->>> from bharatOCR.ocr import OCR
+>>> from IndicPhotoOCR.ocr import OCR
 # Create an object of OCR
 >>> ocr_system = OCR(verbose=True) # for CPU --> OCR(device="cpu")
 # Complete pipeline
