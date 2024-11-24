@@ -137,8 +137,8 @@ class OCR:
 
 if __name__ == '__main__':
     # detect_model_checkpoint = 'bharatSTR/East/tmp/epoch_990_checkpoint.pth.tar'
-    sample_image_path = 'demo_images/image_141.jpg'
-    cropped_image_path = 'demo_images/cropped_image/image_141_0.jpg'
+    sample_image_path = 'test_images/image_141.jpg'
+    cropped_image_path = 'test_images/cropped_image/image_141_0.jpg'
 
     ocr = OCR(device="cpu", verbose=False)
 
