@@ -8,8 +8,8 @@ import numpy as np
 from shapely.geometry import Polygon
 
 
-from bharatOCR.detection import east_config as cfg
-from bharatOCR.detection import east_utils
+from IndicPhotoOCR.detection import east_config as cfg
+from IndicPhotoOCR.detection import east_utils
 
 
 def get_images(img_root):

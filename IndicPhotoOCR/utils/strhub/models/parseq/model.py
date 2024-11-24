@@ -22,8 +22,8 @@ from torch import Tensor
 
 from timm.models.helpers import named_apply
 
-from bharatOCR.utils.strhub.data.utils import Tokenizer
-from bharatOCR.utils.strhub.models.utils import init_weights
+from IndicPhotoOCR.utils.strhub.data.utils import Tokenizer
+from IndicPhotoOCR.utils.strhub.models.utils import init_weights
 
 from .modules import Decoder, DecoderLayer, Encoder, TokenEmbedding
 

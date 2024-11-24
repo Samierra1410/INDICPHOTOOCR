@@ -6,10 +6,10 @@ import cv2
 import numpy as np
 
 
-from bharatOCR.detection.east_detector import EASTdetector
-from bharatOCR.script_identification.CLIP_identifier import CLIPidentifier
-from bharatOCR.recognition.parseq_recogniser import PARseqrecogniser
-import bharatOCR.detection.east_config as cfg
+from IndicPhotoOCR.detection.east_detector import EASTdetector
+from IndicPhotoOCR.script_identification.CLIP_identifier import CLIPidentifier
+from IndicPhotoOCR.recognition.parseq_recogniser import PARseqrecogniser
+import IndicPhotoOCR.detection.east_config as cfg
 
 
 class OCR:
@@ -85,7 +85,7 @@ class OCR:
 
         # Crop the image based on the bounding box
         cropped_image = image.crop((x_min, y_min, x_max, y_max))
-        root_image_dir = "bharatOCR/script_identification"
+        root_image_dir = "IndicPhotoOCR/script_identification"
         os.makedirs(f"{root_image_dir}/images", exist_ok=True)
         # Temporarily save the cropped image to pass to the script model
         cropped_path = f'{root_image_dir}/images/temp_crop_{x_min}_{y_min}.jpg'

@@ -7,9 +7,9 @@ import numpy as np
 import time
 import requests
 
-from bharatOCR.detection import east_config as cfg
-from bharatOCR.detection import east_preprossing as preprossing
-from bharatOCR.detection import east_locality_aware_nms as locality_aware_nms
+from IndicPhotoOCR.detection import east_config as cfg
+from IndicPhotoOCR.detection import east_preprossing as preprossing
+from IndicPhotoOCR.detection import east_locality_aware_nms as locality_aware_nms
 
 
 

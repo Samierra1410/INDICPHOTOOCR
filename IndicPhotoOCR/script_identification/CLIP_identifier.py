@@ -124,7 +124,7 @@ class CLIPidentifier:
     def ensure_model(self, model_name):
         model_path = model_info[model_name]["path"]
         url = model_info[model_name]["url"]
-        root_model_dir = "bharatOCR/script_identification/"
+        root_model_dir = "IndicPhotoOCR/script_identification/"
         model_path = os.path.join(root_model_dir, model_path)
         
         if not os.path.exists(model_path):

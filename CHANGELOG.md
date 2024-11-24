@@ -1,14 +1,19 @@
 # Changelog
 
-## [1.0.1] - 2024-10-28
+## [1.1.0] - 2024-11-24
 ### Added
-- Added support for detecting polygonal bounding boxes in `visualize_detection`.
-- Introduced the `show` argument in `visualize_detection` to control image display.
+- Updated package naming convention
+
+## [1.0.3] - 2024-11-06
+### Added
+- Python package requirements sorted with setup.py
 
 ## [1.0.2] - 2024-11-01
 ### Added
 - Added language support for 10 additional models in the recognition module.
 
-## [1.0.3] - 2024-11-06
+## [1.0.1] - 2024-10-28
 ### Added
-- Python package requirements sorted with setup.py
+- Added support for detecting polygonal bounding boxes in `visualize_detection`.
+- Introduced the `show` argument in `visualize_detection` to control image display.
+

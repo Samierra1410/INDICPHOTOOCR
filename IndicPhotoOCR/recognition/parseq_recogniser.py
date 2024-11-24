@@ -16,8 +16,8 @@ from typing import Optional, Callable, Sequence, Tuple
 from tqdm import tqdm
 
 
-from bharatOCR.utils.strhub.data.module import SceneTextDataModule
-from bharatOCR.utils.strhub.models.utils import load_from_checkpoint
+from IndicPhotoOCR.utils.strhub.data.module import SceneTextDataModule
+from IndicPhotoOCR.utils.strhub.models.utils import load_from_checkpoint
 
 
 model_info = {
@@ -101,7 +101,7 @@ class PARseqrecogniser:
     def ensure_model(self, model_name):
         model_path = model_info[model_name]["path"]
         url = model_info[model_name]["url"]
-        root_model_dir = "bharatOCR/recognition/"
+        root_model_dir = "IndicPhotoOCR/recognition/"
         model_path = os.path.join(root_model_dir, model_path)
         
         if not os.path.exists(model_path):

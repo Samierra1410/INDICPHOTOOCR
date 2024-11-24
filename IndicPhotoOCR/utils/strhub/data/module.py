@@ -21,7 +21,7 @@ from torchvision import transforms as T
 
 import pytorch_lightning as pl
 
-from bharatOCR.utils.strhub.data.dataset import LmdbDataset, build_tree_dataset
+from IndicPhotoOCR.utils.strhub.data.dataset import LmdbDataset, build_tree_dataset
 
 
 class SceneTextDataModule(pl.LightningDataModule):

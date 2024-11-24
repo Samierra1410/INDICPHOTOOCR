@@ -4,8 +4,8 @@ import math
 import torch
 
 
-from bharatOCR.detection import east_config as cfg
-from bharatOCR.detection import east_utils as utils
+from IndicPhotoOCR.detection import east_config as cfg
+from IndicPhotoOCR.detection import east_utils as utils
 
 
 def conv_bn(inp, oup, stride):

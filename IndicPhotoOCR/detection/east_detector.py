@@ -6,10 +6,10 @@ import time
 import warnings
 
 
-import bharatOCR.detection.east_config as cfg
-from bharatOCR.detection.east_utils import ModelManager
-from bharatOCR.detection.east_model import East
-import bharatOCR.detection.east_utils as utils
+import IndicPhotoOCR.detection.east_config as cfg
+from IndicPhotoOCR.detection.east_utils import ModelManager
+from IndicPhotoOCR.detection.east_model import East
+import IndicPhotoOCR.detection.east_utils as utils
 
 # Suppress warnings
 warnings.filterwarnings("ignore")

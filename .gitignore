@@ -158,17 +158,17 @@ bharatSTR/images
 __pycache__/
 bharatSTR/
 
-bharatOCR/detection/East
-bharatOCR/recognition/models
+IndicPhotoOCR/detection/East
+IndicPhotoOCR/recognition/models
 
-bharatOCR/script_identification/images
-bharatOCR/script_identification/models
+IndicPhotoOCR/script_identification/images
+IndicPhotoOCR/script_identification/models
 
 
 build/
 dist/
 test.png
-static/pics/bharatocr.gif
+static/pics/IndicPhotoOCR.gif
 
 
 

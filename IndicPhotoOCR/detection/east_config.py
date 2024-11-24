@@ -17,14 +17,14 @@ min_text_size = 10
 min_crop_side_ratio = 0.1
 means=[100, 100, 100]
 pretrained = True  # 是否加载基础网络的预训练模型
-pretrained_basemodel_path = 'bharatOCR/detection/East/tmp/backbone_net/mobilenet_v2.pth.tar'
+pretrained_basemodel_path = 'IndicPhotoOCR/detection/East/tmp/backbone_net/mobilenet_v2.pth.tar'
 pre_lr = 1e-4  # 基础网络的初始学习率
 lr = 1e-3  # 后面网络的初始学习率
 decay_steps = 50  # decayed_learning_rate = learning_rate * decay_rate ^ (global_epoch / decay_steps)
 decay_rate = 0.97
 init_type = 'xavier'  # 网络参数初始化方式
 resume = True  # 整体网络是否恢复原来保存的模型
-checkpoint = 'bharatOCR/detection/East/tmp/epoch_990_checkpoint.pth.tar'  # 指定具体路径及文件名
+checkpoint = 'IndicPhotoOCR/detection/East/tmp/epoch_990_checkpoint.pth.tar'  # 指定具体路径及文件名
 max_epochs = 1000  # 最大迭代epochs数
 l2_weight_decay = 1e-6  # l2正则化惩罚项权重
 print_freq = 10  # 每10个batch输出损失结果
