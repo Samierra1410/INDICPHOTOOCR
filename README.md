@@ -25,11 +25,11 @@ IndicPhotoOCR is an advanced OCR toolkit designed for detecting, identifying, an
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Table of Content
-[Updates](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#updates)</br>
-[Installation](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#installation)<br>
-[How to use](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#how-to-use)</br>
-[Acknowledgement](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#acknowledgement)</br>
-[Contact us](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#contact-us)</br>
+[Updates](README.md#updates)</br>
+[Installation](README.md#installation)<br>
+[How to use](README.md#how-to-use)</br>
+[Acknowledgement](README.md#acknowledgement)</br>
+[Contact us](README.md#contact-us)</br>
 
 <hr style="width: 100%; border: 1px solid #000;">
 
