@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="bharatOCR",
-    version="1.0.3",
+    name="IndicPhotoOCR",
+    version="1.1.0",
     description="Scene Text Recognition Toolkit across 13 Indian Languages which contains detection, script identification, and text recognition modules",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.md").read(),
     long_description_content_type="text/markdown",
     author="Anik De",
     author_email="anekde@gmail.com",
-    url="https://github.com/Bhashini-IITJ/BharatOCR",
+    url="https://github.com/Bhashini-IITJ/IndicPhotoOCR",
     packages=find_packages(),
     python_requires='>=3.9',
     install_requires=[
