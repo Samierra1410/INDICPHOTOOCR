@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./static/pics/ipoLogo.png" alt="BharatOCR Logo" width="25%">
+  <img src="./static/pics/ipoLogo.png" alt="IndicPhotoOCR Logo" width="25%">
   <h3 align="center">
 IndicPhotoOCR - Comprehensive Scene Text Recognition Toolkit </br> across 13 Indian Languages
   </h3>
@@ -25,11 +25,11 @@ IndicPhotoOCR is an advanced OCR toolkit designed for detecting, identifying, an
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Table of Content
-[Updates](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#updates)</br>
-[Installation](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#installation)<br>
-[How to use](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#how-to-use)</br>
-[Acknowledgement](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#acknowledgement)</br>
-[Contact us](https://github.com/Bhashini-IITJ/BharatOCR/blob/main/README.md#contact-us)</br>
+[Updates](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#updates)</br>
+[Installation](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#installation)<br>
+[How to use](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#how-to-use)</br>
+[Acknowledgement](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#acknowledgement)</br>
+[Contact us](https://github.com/Bhashini-IITJ/IndicPhotoOCR/blob/main/README.md#contact-us)</br>
 
 <hr style="width: 100%; border: 1px solid #000;">
 
