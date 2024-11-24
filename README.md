@@ -56,7 +56,7 @@ cd IndicPhotoOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install dist/IndicPhotoOCR-1.0.3-py3-none-any.whl[cpu]
+  pip install dist/IndicPhotoOCR-1.1.0-py3-none-any.whl[cpu]
   ```
 </details>
 
@@ -65,7 +65,7 @@ cd IndicPhotoOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install ./dist/IndicPhotoOCR-1.0.3-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
+  pip install ./dist/IndicPhotoOCR-1.1.0-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
   ```
 </details>
 
@@ -74,7 +74,7 @@ cd IndicPhotoOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install ./dist/IndicPhotoOCR-1.0.3-py3-none-any.whl[cu121] --extra-index-url https://download.pytorch.org/whl/cu121
+  pip install ./dist/IndicPhotoOCR-1.1.0-py3-none-any.whl[cu121] --extra-index-url https://download.pytorch.org/whl/cu121
   ```
 </details>
 <br>
@@ -101,14 +101,14 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 >>> ocr_system = OCR(verbose=True) # for CPU --> OCR(device="cpu")
 
 # Get detections
->>> detections = ocr_system.detect("demo_images/image_141.jpg")
+>>> detections = ocr_system.detect("test_images/image_141.jpg")
 
 # Running text detection...
 # 4334 text boxes before nms
 # 1.027989387512207
 
 # Save and visualize the detection results
->>> ocr_system.visualize_detection("demo_images/image_141.jpg", detections)
+>>> ocr_system.visualize_detection("test_images/image_141.jpg", detections)
 # Image saved at: test.png
 ```
 
@@ -118,7 +118,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 # Create an object of OCR
 >>> ocr_system = OCR(verbose=True) # for CPU --> OCR(device="cpu")
 # Get recognitions
->>> ocr_system.recognise("demo_images/cropped_image/image_141_0.jpg", "hindi")
+>>> ocr_system.recognise("test_images/cropped_image/image_141_0.jpg", "hindi")
 # Recognizing text in detected area...
 # 'मण्डी'
 ```
@@ -129,7 +129,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 # Create an object of OCR
 >>> ocr_system = OCR(verbose=True) # for CPU --> OCR(device="cpu")
 # Complete pipeline
->>> ocr_system.ocr("demo_images/image_141.jpg")
+>>> ocr_system.ocr("test_images/image_141.jpg")
 # Running text detection...
 # 4334 text boxes before nms
 # 0.9715704917907715
@@ -185,7 +185,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 
 Text Recognition - [PARseq](https://github.com/baudm/parseq)\
 EAST re-implemenation [repository](https://github.com/foamliu/EAST).<br/>
-[Bhashini](https://bhashini.gov.in/)
+National Language Translation Mission [Bhashini](https://bhashini.gov.in/).
 ## Contact us
 For any queries, please contact us at:
 - [Anik De](mailto:anekde@gmail.com)
