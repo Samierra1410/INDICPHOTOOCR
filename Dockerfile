@@ -26,12 +26,20 @@ RUN source ~/.bashrc
 # Make RUN commands use the bocr environment
 SHELL ["conda", "run", "-n", "bocr", "/bin/bash", "-c"]
 
+# # Set default shell to bash
+# SHELL ["/bin/bash", "-c"]
+
 # # Clone BharatOCR repository
 # RUN git clone https://github.com/Bhashini-IITJ/BharatOCR.git && \
-#     cd BharatOCR && \
-#     git switch requirements && \
+#     git switch photoOCR && \
+#     cd IndicPhotoOCR && \
 #     python setup.py sdist bdist_wheel && \
-#     pip install ./dist/bharatOCR-1.0.2-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
+#     pip install ./dist/IndicPhotoOCR-1.1.0-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
 
-# # Set default command to run BharatOCR
-# CMD ["conda", "run", "-n", "bocr", "python", "-m", "bharatOCR.ocr"]
+# # # Set default command to run BharatOCR
+# CMD ["conda", "run", "-n", "bocr", "python", "-m", "IndicPhotoOCR.ocr"]
+
+
+# cd IndicPhotoOCR
+# sudo docker build -t indicphotoocr:latest .
+# sudo docker run --gpus all --rm -it indicphotoocr:latest
