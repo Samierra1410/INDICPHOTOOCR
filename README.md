@@ -44,8 +44,8 @@ IndicPhotoOCR is an advanced OCR toolkit designed for detecting, identifying, an
 ## Installation
 Currently we need to manually create virtual environemnt.
 ```python
-conda create -n bharatocr python=3.9 -y
-conda activate bharatocr
+conda create -n indicphotoocr python=3.9 -y
+conda activate indicphotoocr
 
 
 git clone https://github.com/Bhashini-IITJ/IndicPhotoOCR.git
