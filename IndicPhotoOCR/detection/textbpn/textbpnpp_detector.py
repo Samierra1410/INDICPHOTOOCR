@@ -6,6 +6,7 @@ from IndicPhotoOCR.detection.textbpn.cfglib.config import config as cfg
 import warnings
 import os
 import requests
+from tqdm import tqdm
 
 # Suppress warnings
 warnings.filterwarnings("ignore")
