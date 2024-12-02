@@ -165,6 +165,9 @@ IndicPhotoOCR/script_identification/images
 IndicPhotoOCR/script_identification/models
 
 
+IndicPhotoOCR/detection/textbpn/models
+
+
 build/
 dist/
 test.png

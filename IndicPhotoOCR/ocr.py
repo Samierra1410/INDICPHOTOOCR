@@ -6,10 +6,11 @@ import cv2
 import numpy as np
 
 
-from IndicPhotoOCR.detection.east_detector import EASTdetector
+# from IndicPhotoOCR.detection.east_detector import EASTdetector
 from IndicPhotoOCR.script_identification.CLIP_identifier import CLIPidentifier
 from IndicPhotoOCR.recognition.parseq_recogniser import PARseqrecogniser
 import IndicPhotoOCR.detection.east_config as cfg
+from IndicPhotoOCR.detection.textbpn.textbpnpp_detector import TextBPNpp_detector
 
 
 class OCR:
@@ -18,18 +19,22 @@ class OCR:
         self.device = device
         self.verbose = verbose
         # self.image_path = image_path
-        self.detector = EASTdetector()
+        # self.detector = EASTdetector()
+        self.detector = TextBPNpp_detector(device=self.device)
         self.recogniser = PARseqrecogniser()
         self.identifier = CLIPidentifier()
 
-    def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
-        """Run the detection model to get bounding boxes of text areas."""
+    # def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
+    #     """Run the detection model to get bounding boxes of text areas."""
 
-        if self.verbose:
-            print("Running text detection...")
-        detections = self.detector.detect(image_path, detect_model_checkpoint, self.device)
-        # print(detections)
-        return detections['detections']
+    #     if self.verbose:
+    #         print("Running text detection...")
+    #     detections = self.detector.detect(image_path, detect_model_checkpoint, self.device)
+    #     # print(detections)
+    #     return detections['detections']
+    def detect(self, image_path):
+        self.detections = self.detector.detect(image_path)
+        return self.detections['detections']
 
     def visualize_detection(self, image_path, detections, save_path=None, show=False):
         # Default save path if none is provided
@@ -140,7 +145,7 @@ if __name__ == '__main__':
     sample_image_path = 'test_images/image_141.jpg'
     cropped_image_path = 'test_images/cropped_image/image_141_0.jpg'
 
-    ocr = OCR(device="cpu", verbose=False)
+    ocr = OCR(device="cuda", verbose=False)
 
     # detections = ocr.detect(sample_image_path)
     # print(detections)
