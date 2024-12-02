@@ -74,14 +74,15 @@ class EASTdetector:
 
         return bbox_result_dict
 
-# if __name__ == "__main__":
-#     import argparse
-#     parser = argparse.ArgumentParser(description='Text detection using EAST model')
-#     parser.add_argument('--image_path', type=str, required=True, help='Path to the input image')
-#     parser.add_argument('--device', type=str, default='cpu', help='Device to run the model on, e.g., "cpu" or "cuda"')
-#     parser.add_argument('--model_checkpoint', type=str, required=True, help='Path to the model checkpoint file')
-#     args = parser.parse_args()
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description='Text detection using EAST model')
+    parser.add_argument('--image_path', type=str, required=True, help='Path to the input image')
+    parser.add_argument('--device', type=str, default='cpu', help='Device to run the model on, e.g., "cpu" or "cuda"')
+    parser.add_argument('--model_checkpoint', type=str, required=True, help='Path to the model checkpoint file')
+    args = parser.parse_args()
 
-#     # Run prediction and get results as dictionary
-#     detection_result = predict(args.image_path, args.device, args.model_checkpoint)
-#     print(detection_result)
+    # Run prediction and get results as dictionary
+    east = EASTdetector(model_path = args.model_checkpoint)
+    detection_result = east.detect(args.image_path, args.model_checkpoint, args.device)
+    # print(detection_result)
