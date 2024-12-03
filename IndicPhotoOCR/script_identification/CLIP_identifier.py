@@ -121,18 +121,25 @@ class CLIPidentifier:
         pass
 
     # Ensure model file exists; download directly if not
-    def ensure_model(self, model_name):
+    def ensure_model(model_name):
         model_path = model_info[model_name]["path"]
         url = model_info[model_name]["url"]
-        root_model_dir = "IndicPhotoOCR/script_identification/"
-        model_path = os.path.join(root_model_dir, model_path)
-        
+
         if not os.path.exists(model_path):
             print(f"Model not found locally. Downloading {model_name} from {url}...")
             response = requests.get(url, stream=True)
-            os.makedirs(f"{root_model_dir}/models", exist_ok=True)
-            with open(f"{model_path}", "wb") as f:
-                f.write(response.content)
+            total_size = int(response.headers.get('content-length', 0))  # Get total file size
+            os.makedirs("models", exist_ok=True)
+            with open(model_path, "wb") as f, tqdm(
+                desc=f"Downloading {model_name}",
+                total=total_size,
+                unit='B',
+                unit_scale=True,
+                unit_divisor=1024,
+            ) as progress_bar:
+                for chunk in response.iter_content(chunk_size=1024):
+                    f.write(chunk)
+                    progress_bar.update(len(chunk))
             print(f"Downloaded model for {model_name}.")
         
         return model_path
