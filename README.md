@@ -35,6 +35,7 @@ IndicPhotoOCR is an advanced PhotoOCR toolkit designed for detecting, identifyin
 
 
 ## Updates
+<b>[December 2024]:</b> Detection Module: TextBPN++ added.\
 <b>[November 2024]:</b> Demo available in [huggingface space](https://huggingface.co/spaces/anikde/IndicPhotoOCR).\
 <b>[November 2024]:</b> Code available at [Google Colab](https://colab.research.google.com/drive/1BILXjUF2kKKrzUJ_evubgLHl2busPiH2?usp=sharing).\
 <b>[November 2024]:</b> Added support for [10 languages](#config) in the recognition module.</br>
