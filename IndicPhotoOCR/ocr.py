@@ -54,9 +54,15 @@ class OCR:
         for box in detections:
             # Convert list of points to a numpy array with int type
             points = np.array(box, np.int32)
-            points = points.reshape((-1, 1, 2))  # Reshape for cv2.polylines
-            # Draw the polygon
-            cv2.polylines(image, [points], isClosed=True, color=(0, 255, 0), thickness=3)
+
+            # Compute the top-left and bottom-right corners of the bounding box
+            x_min = np.min(points[:, 0])
+            y_min = np.min(points[:, 1])
+            x_max = np.max(points[:, 0])
+            y_max = np.max(points[:, 1])
+
+            # Draw the rectangle
+            cv2.rectangle(image, (x_min, y_min), (x_max, y_max), color=(0, 255, 0), thickness=3)
 
         # Show the image if 'show' is True
         if show:
