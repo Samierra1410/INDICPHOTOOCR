@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="IndicPhotoOCR",
-    version="1.1.0",
+    version="1.2.0",
     description="Scene Text Recognition Toolkit across 13 Indian Languages which contains detection, script identification, and text recognition modules",
     long_description=open("README.md").read() + "\n\n" + open("CHANGELOG.md").read(),
     long_description_content_type="text/markdown",
@@ -53,7 +53,10 @@ setup(
         'opencv-python==4.10.0.84',
         'shapely==2.0.6',
         'openai-clip==1.0.1',
-        'lmdb==1.5.1'
+        'lmdb==1.5.1',
+        'easydict==1.13',
+        'scipy==1.13.1',
+        'six==1.16.0'
 
     ],
     extras_require={
@@ -71,9 +74,6 @@ setup(
             'torch==2.5.0',
             'torchvision==0.20.0',
             # Any additional packages specific to CPU
-        ],
-        'extra': [
-            'six==1.16.0',  # Your other extra requirements
         ],
     },
 )
