@@ -56,7 +56,8 @@ setup(
         'lmdb==1.5.1',
         'easydict==1.13',
         'scipy==1.13.1',
-        'six==1.16.0'
+        'six==1.16.0',
+        'matplotlib==3.9.0'
 
     ],
     extras_require={
