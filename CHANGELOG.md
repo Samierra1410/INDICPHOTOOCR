@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.0] - 2024-11-24
+### Added
+- Textbpn++ detection model added
+
 ## [1.1.0] - 2024-11-24
 ### Added
 - Updated package naming convention
