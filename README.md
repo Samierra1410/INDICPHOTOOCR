@@ -176,7 +176,25 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 
 
 ```
+## Contributors
+| <img src="https://media.licdn.com/dms/image/v2/D5603AQG_1sM4mCkyzQ/profile-displayphoto-shrink_200_200/B56ZOeCFmsHYAc-/0/1733523168202?e=1738800000&v=beta&t=AEL7-Wkztp5QmSIg2JQj5d58Jel-T5vMIec4T9Kxs_M" width="100" style="border-radius:50%;"> |
+|:---------------------------------:|
+| Anik De                          |
+| Tech Lead and Main Conributor    |
 
+| <img src="https://abhiram4572.github.io/images/personal.jpeg" width="100" style="border-radius:50%;"> |  <img src="https://media.licdn.com/dms/image/v2/D4D03AQEdXDtdOCbbxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686933556251?e=1738800000&v=beta&t=ws8V7jeCXlE7h2pMyqFo8b0fRn93PU_RZAPmJtVVHVU" width="100" style="border-radius:50%;"> |<img src="https://media.licdn.com/dms/image/v2/D4D03AQGIfoAjZ2s7EQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681010692534?e=1738800000&v=beta&t=c_3oLxHic2mvt6qdVUrqcnpkI50hadoz-ojIAgin4tg" width="100" style="border-radius:50%;"> |<img src=" "> |
+|:---------------------------------:|:---------------------------------:|:---------------------------------:|:---------------------------------:|
+| Abhiram                         | Aditya Rathore                         | Harshiv Shah| Sagar Agarwal|
+| Contributor              | Contributor                | Contributor                |Contributor                |
+
+
+
+
+
+| <img src="https://anandmishra22.github.io/files/Mishra_oct22.png" width="100" style="border-radius:50%;"> |
+|:---------------------------------:|
+| Anand Mishra                         |
+| Project Investigator                |
 <!-- ## Training -->
 
 ## Acknowledgement
