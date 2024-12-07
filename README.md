@@ -28,6 +28,7 @@ IndicPhotoOCR is an advanced PhotoOCR toolkit designed for detecting, identifyin
 [Updates](README.md#updates)</br>
 [Installation](README.md#installation)<br>
 [How to use](README.md#how-to-use)</br>
+[Contributors](README.md#contributors)</br>
 [Acknowledgement](README.md#acknowledgement)</br>
 [Contact us](README.md#contact-us)</br>
 
