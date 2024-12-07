@@ -28,6 +28,7 @@ IndicPhotoOCR is an advanced PhotoOCR toolkit designed for detecting, identifyin
 [Updates](README.md#updates)</br>
 [Installation](README.md#installation)<br>
 [How to use](README.md#how-to-use)</br>
+[Bharat Scene Text Dataset](README.md#related-large-scale-indian-language-scene-text-dataset)</br>
 [Contributors](README.md#contributors)</br>
 [Acknowledgement](README.md#acknowledgement)</br>
 [Contact us](README.md#contact-us)</br>
@@ -114,7 +115,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 # Image saved at: test.png
 ```
 
-## Cropped Word Recognition
+### Cropped Word Recognition
 ```python
 >>> from IndicPhotoOCR.ocr import OCR
 # Create an object of OCR
@@ -125,7 +126,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 # 'मण्डी'
 ```
 
-## End-to-end Scene Text Recognition
+### End-to-end Scene Text Recognition
 ```python
 >>> from IndicPhotoOCR.ocr import OCR
 # Create an object of OCR
