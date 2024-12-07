@@ -28,6 +28,7 @@ IndicPhotoOCR is an advanced PhotoOCR toolkit designed for detecting, identifyin
 [Updates](README.md#updates)</br>
 [Installation](README.md#installation)<br>
 [How to use](README.md#how-to-use)</br>
+[Contributors](README.md#contributors)</br>
 [Acknowledgement](README.md#acknowledgement)</br>
 [Contact us](README.md#contact-us)</br>
 
@@ -176,7 +177,28 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 
 
 ```
+## Contributors
+| <img src="https://media.licdn.com/dms/image/v2/D5603AQG_1sM4mCkyzQ/profile-displayphoto-shrink_200_200/B56ZOeCFmsHYAc-/0/1733523168202?e=1738800000&v=beta&t=AEL7-Wkztp5QmSIg2JQj5d58Jel-T5vMIec4T9Kxs_M" width="100" style="border-radius:50%;"> |
+|:---------------------------------:|
+| [Anik De](https://www.linkedin.com/in/anik-de/)                         |
+| Tech Lead and Main Conributor    |
 
+| <img src="https://abhiram4572.github.io/images/personal.jpeg" width="100" style="border-radius:50%;"> |  <img src="https://media.licdn.com/dms/image/v2/D4D03AQEdXDtdOCbbxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686933556251?e=1738800000&v=beta&t=ws8V7jeCXlE7h2pMyqFo8b0fRn93PU_RZAPmJtVVHVU" width="100" style="border-radius:50%;"> |<img src="https://media.licdn.com/dms/image/v2/D4D03AQGIfoAjZ2s7EQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681010692534?e=1738800000&v=beta&t=c_3oLxHic2mvt6qdVUrqcnpkI50hadoz-ojIAgin4tg" width="100" style="border-radius:50%;"> |
+|:---------------------------------:|:---------------------------------:|:---------------------------------:|
+| [Abhirama Subramanyam](https://abhiram4572.github.io/)                         | [Aditya Rathore](https://www.linkedin.com/in/aditya-rathor-87829324b/)                        | [Harshiv Shah](https://www.linkedin.com/in/harshivshah27/)| 
+| Contributor              | Contributor                | Contributor                |
+
+
+|<img src="https://media.licdn.com/dms/image/v2/D4E03AQFoeq5HdrfYAQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715695249130?e=1738800000&v=beta&t=xbJOs7T5c0pJ03mpIOyFLLfcMvcqcFcT5WtJeHMEshs" width="100" style="border-radius:50%;"> |<img src="https://media.licdn.com/dms/image/v2/C5103AQEubx-BeihKCQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517474570862?e=1738800000&v=beta&t=IdWNMyjYffhAV6agIHJpBjqwu4QScLf77vq4xHayYII" width="100" style="border-radius:50%;"> |
+|:---------------------------------:|:---------------------------------:|
+|[Sagar Agarwal](https://www.linkedin.com/in/sagar-agrawal-4a0b94106/)|[Rajeev Yadav](https://www.linkedin.com/in/rajeev-yadav/)|
+| Contributor                | Contributor                |
+
+
+| <img src="https://anandmishra22.github.io/files/Mishra_oct22.png" width="100" style="border-radius:50%;"> |
+|:---------------------------------:|
+| [Anand Mishra](https://anandmishra22.github.io/)                         |
+| Project Investigator                |
 <!-- ## Training -->
 
 
