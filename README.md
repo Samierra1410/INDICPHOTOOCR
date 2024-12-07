@@ -179,6 +179,19 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 
 <!-- ## Training -->
 
+
+## Related Large-Scale Indian Language Scene Text Dataset 
+Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneTextDataset)\
+
+## Citation
+
+```
+@misc{ipo,
+   title      = {{I}ndic{P}hoto{O}CR: A comprehensive toolkit for {I}ndian {L}anguage {S}cene {T}ext {U}nderstanding},
+  howpublished = {\url{https://github.com/Bhashini-IITJ/IndicPhotoOCR/}},
+  year         = 2024,
+}
+
 ## Acknowledgement
 
 Text Recognition - [PARseq](https://github.com/baudm/parseq)\
