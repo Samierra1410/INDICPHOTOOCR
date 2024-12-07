@@ -187,7 +187,8 @@ Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneT
 
 ```
 @misc{ipo,
-   title      = {{I}ndic{P}hoto{O}CR: A comprehensive toolkit for {I}ndian {L}anguage {S}cene {T}ext {U}nderstanding},
+  author = {Anik De et al.}
+  title      = {{I}ndic{P}hoto{O}CR: A comprehensive toolkit for {I}ndian language scene text understanding},
   howpublished = {\url{https://github.com/Bhashini-IITJ/IndicPhotoOCR/}},
   year         = 2024,
 }
