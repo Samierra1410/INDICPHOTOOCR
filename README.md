@@ -191,7 +191,7 @@ Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneT
   howpublished = {\url{https://github.com/Bhashini-IITJ/IndicPhotoOCR/}},
   year         = 2024,
 }
-
+```
 ## Acknowledgement
 
 Text Recognition - [PARseq](https://github.com/baudm/parseq)\
