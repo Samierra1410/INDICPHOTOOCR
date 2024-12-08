@@ -191,6 +191,7 @@ Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneT
 |:---------------------------------:|:---------------------------------:|:---------------------------------:|
 | [Abhirama](https://abhiram4572.github.io/)                         | [Aditya Rathore](https://www.linkedin.com/in/aditya-rathor-87829324b/)                        | [Harshiv Shah](https://www.linkedin.com/in/harshivshah27/)| 
 | Contributor              | Contributor                | Contributor                |
+
 |<img src="https://media.licdn.com/dms/image/v2/D4E03AQFoeq5HdrfYAQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715695249130?e=1738800000&v=beta&t=xbJOs7T5c0pJ03mpIOyFLLfcMvcqcFcT5WtJeHMEshs" width="100" style="border-radius:50%;"> |<img src="https://media.licdn.com/dms/image/v2/C5103AQEubx-BeihKCQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517474570862?e=1738800000&v=beta&t=IdWNMyjYffhAV6agIHJpBjqwu4QScLf77vq4xHayYII" width="100" style="border-radius:50%;"> |
 |:---------------------------------:|:---------------------------------:|
 |[Sagar Agarwal](https://www.linkedin.com/in/sagar-agrawal-4a0b94106/)|[Rajeev Yadav](https://www.linkedin.com/in/rajeev-yadav/)|
