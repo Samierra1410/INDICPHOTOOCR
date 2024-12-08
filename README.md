@@ -189,7 +189,7 @@ Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneT
 
 | <img src="https://abhiram4572.github.io/images/personal.jpeg" width="100" style="border-radius:50%;"> |  <img src="https://media.licdn.com/dms/image/v2/D4D03AQEdXDtdOCbbxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686933556251?e=1738800000&v=beta&t=ws8V7jeCXlE7h2pMyqFo8b0fRn93PU_RZAPmJtVVHVU" width="100" style="border-radius:50%;"> |<img src="https://media.licdn.com/dms/image/v2/D4D03AQGIfoAjZ2s7EQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681010692534?e=1738800000&v=beta&t=c_3oLxHic2mvt6qdVUrqcnpkI50hadoz-ojIAgin4tg" width="100" style="border-radius:50%;"> |
 |:---------------------------------:|:---------------------------------:|:---------------------------------:|
-| [Abhirama Subramanyam](https://abhiram4572.github.io/)                         | [Aditya Rathore](https://www.linkedin.com/in/aditya-rathor-87829324b/)                        | [Harshiv Shah](https://www.linkedin.com/in/harshivshah27/)| 
+| [Abhirama](https://abhiram4572.github.io/)                         | [Aditya Rathore](https://www.linkedin.com/in/aditya-rathor-87829324b/)                        | [Harshiv Shah](https://www.linkedin.com/in/harshivshah27/)| 
 | Contributor              | Contributor                | Contributor                |
 
 
