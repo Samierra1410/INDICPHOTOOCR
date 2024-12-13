@@ -219,6 +219,7 @@ Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneT
 
 Text Recognition - [PARseq](https://github.com/baudm/parseq)\
 EAST re-implemenation [repository](https://github.com/foamliu/EAST).<br/>
+TextBPN++ [repository](https://github.com/GXYM/TextBPN-Plus-Plus).<br/>
 National Language Translation Mission [Bhashini](https://bhashini.gov.in/).
 ## Contact us
 For any queries, please contact us at:
