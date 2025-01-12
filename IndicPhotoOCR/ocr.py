@@ -7,7 +7,8 @@ import numpy as np
 
 
 # from IndicPhotoOCR.detection.east_detector import EASTdetector
-from IndicPhotoOCR.script_identification.CLIP_identifier import CLIPidentifier
+# from IndicPhotoOCR.script_identification.CLIP_identifier import CLIPidentifier
+from IndicPhotoOCR.script_identification.vit.vit_infer import VIT_identifier
 from IndicPhotoOCR.recognition.parseq_recogniser import PARseqrecogniser
 import IndicPhotoOCR.detection.east_config as cfg
 from IndicPhotoOCR.detection.textbpn.textbpnpp_detector import TextBPNpp_detector
@@ -22,7 +23,8 @@ class OCR:
         # self.detector = EASTdetector()
         self.detector = TextBPNpp_detector(device=self.device)
         self.recogniser = PARseqrecogniser()
-        self.identifier = CLIPidentifier()
+        # self.identifier = CLIPidentifier()
+        self.identifier = VIT_identifier()
 
     # def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
     #     """Run the detection model to get bounding boxes of text areas."""
@@ -105,7 +107,7 @@ class OCR:
         # Predict script language, here we assume "hindi" as the model name
         if self.verbose:
             print("Identifying script for the cropped area...")
-        script_lang = self.identifier.identify(cropped_path, "hindi")  # Use "hindi" as the model name
+        script_lang = self.identifier.identify(cropped_path, "12C")  # Use "hindi" as the model name
         # print(script_lang)
 
         # Clean up temporary file
@@ -148,7 +150,7 @@ class OCR:
 
 if __name__ == '__main__':
     # detect_model_checkpoint = 'bharatSTR/East/tmp/epoch_990_checkpoint.pth.tar'
-    sample_image_path = 'test_images/image_141.jpg'
+    sample_image_path = 'test_images/image_24.jpg'
     cropped_image_path = 'test_images/cropped_image/image_141_0.jpg'
 
     ocr = OCR(device="cuda", verbose=False)
