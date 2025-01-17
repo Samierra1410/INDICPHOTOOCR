@@ -24,7 +24,7 @@ setup(
         'datasets==3.1.0',
         'filelock==3.16.1',
         'frozenlist==1.5.0',
-        'fsspec==2024.10.0',
+        'fsspec==2024.9.0',
         'huggingface-hub==0.26.1',
         'idna==3.10',
         'jinja2==3.1.4',
