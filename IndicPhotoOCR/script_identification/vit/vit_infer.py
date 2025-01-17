@@ -135,11 +135,11 @@ class VIT_identifier:
 
 
 
-    def identify(self, image_path,model_name):
+    def identify(self, image_path,model_name, device):
         model_path = self.ensure_model(model_name)
 
         vit = ViTForImageClassification.from_pretrained(model_path)
-        model= pipeline('image-classification', model=vit, feature_extractor=processor,device=0)
+        model= pipeline('image-classification', model=vit, feature_extractor=processor,device=device)
 
         if image_path.endswith((".png", ".jpg", ".jpeg")):  
 

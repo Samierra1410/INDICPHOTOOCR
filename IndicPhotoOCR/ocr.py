@@ -109,7 +109,7 @@ class OCR:
         # Predict script language, here we assume "hindi" as the model name
         if self.verbose:
             print("Identifying script for the cropped area...")
-        script_lang = self.identifier.identify(cropped_path, "hindi")  # Use "hindi" as the model name
+        script_lang = self.identifier.identify(cropped_path, "hindi", self.device)  # Use "hindi" as the model name
         # print(script_lang)
 
         # Clean up temporary file
