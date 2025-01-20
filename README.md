@@ -17,7 +17,7 @@ A Comprehensive Toolkit for Scene Text Recognition in Indian Languages
 <hr style="width: 100%; border: 1px solid #000;">
 
 
-IndicPhotoOCR is a scene text recognition toolkit designed for detecting, identifying, and recognizing text across Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, and English, with support for Urdu and Meitei in the pipeline. It is built to handle the unique scripts and complex structures of Indian languages, offering robust detection and recognition capabilities.
+IndicPhotoOCR is a scene text recognition toolkit designed for detecting, identifying, and recognizing text across Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, and English, with support for Urdu and Meitei in the pipeline. It is built to handle the unique scripts and complex structures of Indian languages, offering robust detection and recognition capabilities. The package can be installed with just three lines of code, and a straightforward wrapper function makes it easy to use.
 
 ![](static/pics/visualizeIndicPhotoOCR.png)
 <hr style="width: 100%; border: 1px solid #000;">
