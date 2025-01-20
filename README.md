@@ -35,7 +35,7 @@ IndicPhotoOCR is a scene text recognition toolkit designed for detecting, identi
 
 
 ## Updates
-<b>[December 2025]:</b> Demo available in [huggingface space](https://huggingface.co/spaces/Bhashini-IITJ/IndicPhotoOCR).
+<b>[January 2025]:</b> Demo available in [huggingface space](https://huggingface.co/spaces/Bhashini-IITJ/IndicPhotoOCR).
 Currently demo supports scene images containing bi-lingual Hindi and English text.  
 <b>[December 2024]:</b> Detection Module: TextBPN++ added.\
 <b>[November 2024]:</b> Code available at [Google Colab](https://colab.research.google.com/drive/1BILXjUF2kKKrzUJ_evubgLHl2busPiH2?usp=sharing).\
