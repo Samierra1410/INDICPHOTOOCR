@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./static/pics/IndicPhotoOCR_LOGO.png" alt="IndicPhotoOCR Logo" width="45%">
   <h3 align="center">
-A Comprehensive PhotoOCR (Scene Text Recognition) Toolkit </br> across 13 Indian Languages
+A Comprehensive Toolkit for Scene Text Recognition in Indian Languages
   </h3>
 </p>
 <div align="center">
@@ -17,9 +17,7 @@ A Comprehensive PhotoOCR (Scene Text Recognition) Toolkit </br> across 13 Indian
 <hr style="width: 100%; border: 1px solid #000;">
 
 
-
-
-IndicPhotoOCR is an advanced PhotoOCR toolkit designed for detecting, identifying, and recognizing text across 13 Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Meitei Odia, Punjabi, Tamil, Telugu, Urdu, and English. Built to handle the unique scripts and complex structures of Indian languages, IndicPhotoOCR provides robust detection and recognition capabilities, making it a valuable tool for processing multilingual documents and enhancing document analysis in these diverse scripts.
+IndicPhotoOCR is a scene text recognition toolkit designed for detecting, identifying, and recognizing text across Indian languages, including Assamese, Bengali, Gujarati, Hindi, Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu, and English, with support for Urdu and Meitei in the pipeline. It is built to handle the unique scripts and complex structures of Indian languages, offering robust detection and recognition capabilities.
 
 ![](static/pics/visualizeIndicPhotoOCR.png)
 <hr style="width: 100%; border: 1px solid #000;">
@@ -37,11 +35,12 @@ IndicPhotoOCR is an advanced PhotoOCR toolkit designed for detecting, identifyin
 
 
 ## Updates
+<b>[December 2025]:</b> Demo available in [huggingface space](https://huggingface.co/spaces/Bhashini-IITJ/IndicPhotoOCR).
+Currently demo supports scene images containing bi-lingual Hindi and English text.  
 <b>[December 2024]:</b> Detection Module: TextBPN++ added.\
-<b>[November 2024]:</b> Demo available in [huggingface space](https://huggingface.co/spaces/anikde/IndicPhotoOCR).\
 <b>[November 2024]:</b> Code available at [Google Colab](https://colab.research.google.com/drive/1BILXjUF2kKKrzUJ_evubgLHl2busPiH2?usp=sharing).\
 <b>[November 2024]:</b> Added support for [10 languages](#config) in the recognition module.</br>
-<b>[September 2024]:</b> Private repository created.
+<b>[September 2024]:</b> Repository created.
 <hr style="width: 100%; border: 1px solid #000;">
 
 ## Installation
