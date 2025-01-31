@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.0] - 2025-17-25
+### Added
+- ViT models for script detection
+- Word order based on horizontal and vertical lines
+
 ## [1.2.0] - 2024-11-24
 ### Added
 - Textbpn++ detection model added
