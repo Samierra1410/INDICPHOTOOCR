@@ -27,7 +27,7 @@ setup(
         'fsspec==2024.9.0',
         'huggingface-hub==0.26.1',
         'idna==3.10',
-        'jinja2==3.1.4',
+        'jinja2==3.1.5',
         'joblib==1.4.2',
         'lightning-utilities==0.11.8',
         'markupsafe==3.0.2',
