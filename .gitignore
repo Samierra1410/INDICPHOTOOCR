@@ -163,6 +163,7 @@ IndicPhotoOCR/recognition/models
 
 IndicPhotoOCR/script_identification/images
 IndicPhotoOCR/script_identification/models
+IndicPhotoOCR/script_identification/vit/models
 
 
 IndicPhotoOCR/detection/textbpn/models

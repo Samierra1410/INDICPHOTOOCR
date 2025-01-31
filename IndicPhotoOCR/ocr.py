@@ -7,10 +7,13 @@ import numpy as np
 
 
 # from IndicPhotoOCR.detection.east_detector import EASTdetector
-from IndicPhotoOCR.script_identification.CLIP_identifier import CLIPidentifier
+# from IndicPhotoOCR.script_identification.CLIP_identifier import CLIPidentifier
+from IndicPhotoOCR.script_identification.vit.vit_infer import VIT_identifier
 from IndicPhotoOCR.recognition.parseq_recogniser import PARseqrecogniser
 import IndicPhotoOCR.detection.east_config as cfg
 from IndicPhotoOCR.detection.textbpn.textbpnpp_detector import TextBPNpp_detector
+
+from IndicPhotoOCR.utils.helper import detect_para
 
 
 class OCR:
@@ -22,7 +25,8 @@ class OCR:
         # self.detector = EASTdetector()
         self.detector = TextBPNpp_detector(device=self.device)
         self.recogniser = PARseqrecogniser()
-        self.identifier = CLIPidentifier()
+        # self.identifier = CLIPidentifier()
+        self.identifier = VIT_identifier()
 
     # def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
     #     """Run the detection model to get bounding boxes of text areas."""
@@ -105,7 +109,7 @@ class OCR:
         # Predict script language, here we assume "hindi" as the model name
         if self.verbose:
             print("Identifying script for the cropped area...")
-        script_lang = self.identifier.identify(cropped_path, "hindi")  # Use "hindi" as the model name
+        script_lang = self.identifier.identify(cropped_path, "hindi", self.device)  # Use "hindi" as the model name
         # print(script_lang)
 
         # Clean up temporary file
@@ -123,6 +127,7 @@ class OCR:
 
     def ocr(self, image_path):
         """Process the image by detecting text areas, identifying script, and recognizing text."""
+        recognized_texts = {}
         recognized_words = []
         image = Image.open(image_path)
         
@@ -130,25 +135,41 @@ class OCR:
         detections = self.detect(image_path)
 
         # Process each detected text area
-        for bbox in detections:
-            # Crop and identify script language
+        # for bbox in detections:
+            # # Crop and identify script language
+            # script_lang, cropped_path = self.crop_and_identify_script(image, bbox)
+
+            # # Check if the script language is valid
+            # if script_lang:
+
+            #     # Recognize text
+            #     recognized_word = self.recognise(cropped_path, script_lang)
+            #     recognized_words.append(recognized_word)
+
+            #     if self.verbose:
+            #         print(f"Recognized word: {recognized_word}")
+
+
+        for id, bbox in enumerate(detections):
+            # Identify the script and crop the image to this region
             script_lang, cropped_path = self.crop_and_identify_script(image, bbox)
 
-            # Check if the script language is valid
+            # Calculate bounding box coordinates
+            x1 = min([bbox[i][0] for i in range(len(bbox))])
+            y1 = min([bbox[i][1] for i in range(len(bbox))])
+            x2 = max([bbox[i][0] for i in range(len(bbox))])
+            y2 = max([bbox[i][1] for i in range(len(bbox))])
+
             if script_lang:
+                recognized_text = self.recognise(cropped_path, script_lang)
+                recognized_texts[f"img_{id}"] = {"txt": recognized_text, "bbox": [x1, y1, x2, y2]}
 
-                # Recognize text
-                recognized_word = self.recognise(cropped_path, script_lang)
-                recognized_words.append(recognized_word)
-
-                if self.verbose:
-                    print(f"Recognized word: {recognized_word}")
-
-        return recognized_words
+        return detect_para(recognized_texts)
+        # return recognized_words
 
 if __name__ == '__main__':
     # detect_model_checkpoint = 'bharatSTR/East/tmp/epoch_990_checkpoint.pth.tar'
-    sample_image_path = 'test_images/image_141.jpg'
+    sample_image_path = 'test_images/image_88.jpg'
     cropped_image_path = 'test_images/cropped_image/image_141_0.jpg'
 
     ocr = OCR(device="cuda", verbose=False)
