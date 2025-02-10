@@ -17,7 +17,7 @@ from IndicPhotoOCR.utils.helper import detect_para
 
 
 class OCR:
-    def __init__(self, device='cuda:0', verbose=False):
+    def __init__(self, device='cuda:0', identifier_lang='hindi', verbose=False):
         # self.detect_model_checkpoint = detect_model_checkpoint
         self.device = device
         self.verbose = verbose
@@ -27,6 +27,7 @@ class OCR:
         self.recogniser = PARseqrecogniser()
         # self.identifier = CLIPidentifier()
         self.identifier = VIT_identifier()
+        self.indentifier_lang = identifier_lang
 
     # def detect(self, image_path, detect_model_checkpoint=cfg.checkpoint):
     #     """Run the detection model to get bounding boxes of text areas."""
@@ -109,7 +110,7 @@ class OCR:
         # Predict script language, here we assume "hindi" as the model name
         if self.verbose:
             print("Identifying script for the cropped area...")
-        script_lang = self.identifier.identify(cropped_path, "hindi", self.device)  # Use "hindi" as the model name
+        script_lang = self.identifier.identify(cropped_path, self.indentifier_lang, self.device)  # Use "hindi" as the model name
         # print(script_lang)
 
         # Clean up temporary file
