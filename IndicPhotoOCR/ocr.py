@@ -17,6 +17,17 @@ from IndicPhotoOCR.utils.helper import detect_para
 
 
 class OCR:
+    """
+    Optical Character Recognition (OCR) pipeline for text detection, script identification,
+    and text recognition.
+
+    Args:
+        device (str): Device to use for inference ('cuda:0' or 'cpu').
+        identifier_lang (str): Default script identifier model to use.
+            Valid options: ['hindi', 'bengali', 'tamil', 'telugu', 'malayalam', 'kannada',
+                            'gujarati', 'marathi', 'punjabi', 'odia', 'assamese', 'urdu', 'meitei']
+        verbose (bool): Whether to print detailed processing information.
+    """
     def __init__(self, device='cuda:0', identifier_lang='hindi', verbose=False):
         # self.detect_model_checkpoint = detect_model_checkpoint
         self.device = device
@@ -38,10 +49,28 @@ class OCR:
     #     # print(detections)
     #     return detections['detections']
     def detect(self, image_path):
+        """
+        Detect text regions in the input image.
+        
+        Args:
+            image_path (str): Path to the image file.
+        
+        Returns:
+            list: Detected text bounding boxes.
+        """
         self.detections = self.detector.detect(image_path)
         return self.detections['detections']
 
     def visualize_detection(self, image_path, detections, save_path=None, show=False):
+        """
+        Visualize and optionally save the detected text bounding boxes on an image.
+        
+        Args:
+            image_path (str): Path to the image file.
+            detections (list): List of bounding boxes.
+            save_path (str, optional): Path to save the output image.
+            show (bool): Whether to display the image.
+        """
         # Default save path if none is provided
         default_save_path = "test.png"
         path_to_save = save_path if save_path is not None else default_save_path
@@ -90,6 +119,7 @@ class OCR:
 
         Returns:
             str: Identified script language.
+            str: Path to the cropped image.
         """
         # Extract x and y coordinates from the four corner points
         x_coords = [point[0] for point in bbox]
@@ -119,6 +149,16 @@ class OCR:
         return script_lang, cropped_path
 
     def recognise(self, cropped_image_path, script_lang):
+        """
+        Recognize text in a cropped image using the identified script model.
+        
+        Args:
+            cropped_image_path (str): Path to the cropped image.
+            script_lang (str): Identified script language.
+        
+        Returns:
+            str: Recognized text.
+        """
         """Recognize text in a cropped image area using the identified script."""
         if self.verbose:
             print("Recognizing text in detected area...")
@@ -127,7 +167,15 @@ class OCR:
         return recognized_text
 
     def ocr(self, image_path):
-        """Process the image by detecting text areas, identifying script, and recognizing text."""
+        """
+        Perform end-to-end OCR: detect text, identify script, and recognize text.
+        
+        Args:
+            image_path (str): Path to the input image.
+        
+        Returns:
+            dict: Recognized text with corresponding bounding boxes.
+        """
         recognized_texts = {}
         recognized_words = []
         image = Image.open(image_path)
@@ -173,7 +221,7 @@ if __name__ == '__main__':
     sample_image_path = 'test_images/image_88.jpg'
     cropped_image_path = 'test_images/cropped_image/image_141_0.jpg'
 
-    ocr = OCR(device="cuda", verbose=False)
+    ocr = OCR(device="cuda", identifier_lang='hindo', verbose=False)
 
     # detections = ocr.detect(sample_image_path)
     # print(detections)
