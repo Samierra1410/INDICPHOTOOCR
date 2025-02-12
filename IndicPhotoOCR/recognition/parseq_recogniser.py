@@ -38,11 +38,11 @@ model_info = {
         "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/gujarati.ckpt",
     },
     "kannada": {
-        "path": "models/gujarati.ckpt",
+        "path": "models/kannada.ckpt",
         "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/kannada.ckpt",
     },
     "malayalam": {
-        "path": "models/gujarati.ckpt",
+        "path": "models/malayalam.ckpt",
         "url" : "https://github.com/anikde/STocr/releases/download/V2.0.0/malayalam.ckpt",
     },
     "marathi": {
