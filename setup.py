@@ -47,7 +47,7 @@ setup(
         'sympy==1.13.1',
         'timm==1.0.11',
         'torchmetrics==1.5.1',
-        'transformers==4.45.1',
+        'transformers==4.48.0',
         'tqdm==4.66.5',
         'typing-extensions==4.12.2',
         'urllib3==2.2.3',
