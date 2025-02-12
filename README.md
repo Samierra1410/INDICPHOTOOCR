@@ -35,6 +35,7 @@ IndicPhotoOCR is a scene text recognition toolkit designed for detecting, identi
 
 
 ## Updates
+<b>[Feburary 2025]:</b> Added option to choose between tri-lingual and 12 class script identifiction models.</br>
 <b>[Feburary 2025]:</b> Added recoginition models for Malayalam and Kannada.</br>
 <b>[January 2025]:</b> Added ViT based script identification models.</br>
 <b>[January 2025]:</b> Demo available in [huggingface space](https://huggingface.co/spaces/Bhashini-IITJ/IndicPhotoOCR).</br>
