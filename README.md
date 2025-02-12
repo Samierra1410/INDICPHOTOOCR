@@ -35,6 +35,8 @@ IndicPhotoOCR is a scene text recognition toolkit designed for detecting, identi
 
 
 ## Updates
+<b>[Feburary 2025]:</b> Added recoginition models for Malayalam and Kannada.
+<b>[January 2025]:</b> Added ViT based script identification models.
 <b>[January 2025]:</b> Demo available in [huggingface space](https://huggingface.co/spaces/Bhashini-IITJ/IndicPhotoOCR).
 Currently demo supports scene images containing bi-lingual Hindi and English text.  
 <b>[December 2024]:</b> Detection Module: TextBPN++ added.\
@@ -58,7 +60,7 @@ cd IndicPhotoOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install dist/IndicPhotoOCR-1.2.0-py3-none-any.whl[cpu]
+  pip install dist/IndicPhotoOCR-1.3.0-py3-none-any.whl[cpu]
   ```
 </details>
 
@@ -67,7 +69,7 @@ cd IndicPhotoOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install ./dist/IndicPhotoOCR-1.2.0-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
+  pip install ./dist/IndicPhotoOCR-1.3.0-py3-none-any.whl[cu118] --extra-index-url https://download.pytorch.org/whl/cu118
   ```
 </details>
 
@@ -76,13 +78,15 @@ cd IndicPhotoOCR
 
   ```bash
   python setup.py sdist bdist_wheel
-  pip install ./dist/IndicPhotoOCR-1.2.0-py3-none-any.whl[cu121] --extra-index-url https://download.pytorch.org/whl/cu121
+  pip install ./dist/IndicPhotoOCR-1.3.0-py3-none-any.whl[cu121] --extra-index-url https://download.pytorch.org/whl/cu121
   ```
 </details>
 <br>
 
-If you find any trouble with the above installation use the ```setup.sh``` script.
+If you find any trouble with the above installation use the ```setup.sh``` script. Make sure you have miniconda installed.
 ```bash
+git clone https://github.com/Bhashini-IITJ/IndicPhotoOCR.git
+cd IndicPhotoOCR
 chmod +x setup.sh
 ./setup.sh
 ```
@@ -92,7 +96,7 @@ Currently this model works for hindi v/s english script identification and there
 
 Detection Model: TextBPN++\
 ScripIndetification Model: Hindi v/s English\
-Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, Punjabi, Tamil, Telugu.
+Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, Punjabi, Tamil, Telugu, Malayalam, kannada.
 
 ## How to use
 ### Detection
