@@ -221,7 +221,7 @@ if __name__ == '__main__':
     sample_image_path = 'test_images/image_88.jpg'
     cropped_image_path = 'test_images/cropped_image/image_141_0.jpg'
 
-    ocr = OCR(device="cuda", identifier_lang='hindo', verbose=False)
+    ocr = OCR(device="cuda", identifier_lang='hindi', verbose=False)
 
     # detections = ocr.detect(sample_image_path)
     # print(detections)
