@@ -74,7 +74,7 @@ model_info = {
         "url" : "https://github.com/Bhashini-IITJ/ScriptIdentification/releases/download/Vit_Models/hindienglishtelugu.zip",
         "subcategories": ["hindi", "english", "telugu"]
     },
-    "12C": {
+    "auto": {
         "path": "models/12_classes",
         "url" : "https://github.com/Bhashini-IITJ/ScriptIdentification/releases/download/Vit_Models/12_classes.zip",
         "subcategories": ["hindi", "english", "assamese","bengali","gujarati","kannada","malayalam","marathi","odia","punjabi","tamil","telegu"]
