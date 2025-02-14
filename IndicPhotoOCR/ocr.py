@@ -135,7 +135,12 @@ class OCR:
         os.makedirs(f"{root_image_dir}/images", exist_ok=True)
         # Temporarily save the cropped image to pass to the script model
         cropped_path = f'{root_image_dir}/images/temp_crop_{x_min}_{y_min}.jpg'
-        cropped_image.save(cropped_path)
+        # Convert RGBA to RGB so as to save them
+        if cropped_image.mode == 'RGBA':
+            cropped_image = cropped_image.convert('RGB')
+            cropped_image.save(cropped_path)
+        else:
+            cropped_image.save(cropped_path)
 
         # Predict script language, here we assume "hindi" as the model name
         if self.verbose:
