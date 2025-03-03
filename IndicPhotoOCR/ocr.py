@@ -108,7 +108,10 @@ class OCR:
         # Save the annotated image
         cv2.imwrite(path_to_save, image)
         print(f"Image saved at: {path_to_save}")
-
+        
+    def identify(self, cropped_path):
+        return self.identifier.identify(cropped_path, self.indentifier_lang, self.device)
+        
     def crop_and_identify_script(self, image, bbox):
         """
         Crop a text area from the image and identify its script language.
@@ -145,7 +148,7 @@ class OCR:
         # Predict script language, here we assume "hindi" as the model name
         if self.verbose:
             print("Identifying script for the cropped area...")
-        script_lang = self.identifier.identify(cropped_path, self.indentifier_lang, self.device)  # Use "hindi" as the model name
+        script_lang = self.identify(cropped_path)  # Use "hindi" as the model name
         # print(script_lang)
 
         # Clean up temporary file
