@@ -186,7 +186,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneTextDataset)
 
 ## Contributors
-| <img src="https://github.com/anikde/anikde.github.io/blob/main/anikde.jpeg" width="100" style="border-radius:50%;"> |
+| <img src="https://github.com/anikde/anikde.github.io/blob/main/Anik_New_2.jpg" width="100" style="border-radius:50%;"> |
 |:---------------------------------:|
 | [Anik De](https://www.linkedin.com/in/anik-de/)                         |
 | Tech Lead and Main Contributor    |
