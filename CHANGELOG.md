@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.1] - 2025-17-25
+### Added
+- Seperate function for script identification`
+
 ## [1.3.0] - 2025-17-25
 ### Added
 - ViT models for script detection
