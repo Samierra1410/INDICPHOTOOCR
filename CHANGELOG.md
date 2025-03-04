@@ -2,7 +2,8 @@
 
 ## [1.3.1] - 2025-17-25
 ### Added
-- Seperate function for script identification`
+- Seperate function for script identification
+- Added device opts for recognition
 
 ## [1.3.0] - 2025-17-25
 ### Added
