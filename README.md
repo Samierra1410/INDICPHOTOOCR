@@ -119,6 +119,16 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 # Image saved at: test.png
 ```
 
+### Cropped Word Script Identification
+```python
+>>> from IndicPhotoOCR.ocr import OCR
+# Create an object of OCR
+>>> ocr_system = OCR(verbose=True,  identifier_lang ="auto") # for CPU --> OCR(device="cpu")
+# Get script id
+>>> ocr_system.recognise("test_images/cropped_image/image_141_0.jpg", "hindi")
+# 'hindi'
+```
+
 ### Cropped Word Recognition
 ```python
 >>> from IndicPhotoOCR.ocr import OCR
@@ -134,7 +144,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 ```python
 >>> from IndicPhotoOCR.ocr import OCR
 # Create an object of OCR
->>> ocr_system = OCR(verbose=True) # for CPU --> OCR(device="cpu")
+>>> ocr_system = OCR(verbose=True, identifier_lang ="auto") # for CPU --> OCR(device="cpu")
 # Complete pipeline
 >>> ocr_system.ocr("test_images/image_141.jpg")
 # Identifying script for the cropped area...
