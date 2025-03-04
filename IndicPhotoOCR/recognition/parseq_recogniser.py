@@ -196,7 +196,7 @@ class PARseqrecogniser:
         return text
 
 
-    def recognise(self, checkpoint: str, image_path: str, language: str, verbose: bool) -> str:
+    def recognise(self, checkpoint: str, image_path: str, language: str, verbose: bool, device: str) -> str:
         """
         Loads the desired model and returns the recognized word from the specified image.
 
@@ -208,7 +208,7 @@ class PARseqrecogniser:
         Returns:
             str: The recognized text from the image.
         """
-        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        # device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
         if language != "english":
             model_path = self.ensure_model(checkpoint)
