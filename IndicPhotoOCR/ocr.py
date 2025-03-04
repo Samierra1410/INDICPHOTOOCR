@@ -170,7 +170,7 @@ class OCR:
         """Recognize text in a cropped image area using the identified script."""
         if self.verbose:
             print("Recognizing text in detected area...")
-        recognized_text = self.recogniser.recognise(script_lang, cropped_image_path, script_lang, self.verbose)
+        recognized_text = self.recogniser.recognise(script_lang, cropped_image_path, script_lang, self.verbose, self.device)
         # print(recognized_text)
         return recognized_text
 
