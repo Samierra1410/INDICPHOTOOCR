@@ -125,7 +125,7 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 # Create an object of OCR
 >>> ocr_system = OCR(verbose=True,  identifier_lang ="auto") # for CPU --> OCR(device="cpu")
 # Get script id
->>> ocr_system.recognise("test_images/cropped_image/image_141_0.jpg", "hindi")
+>>> ocr_system.identify("test_images/cropped_image/image_141_0.jpg")
 # 'hindi'
 ```
 
