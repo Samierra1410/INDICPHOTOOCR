@@ -107,7 +107,8 @@ class OCR:
 
         # Save the annotated image
         cv2.imwrite(path_to_save, image)
-        print(f"Image saved at: {path_to_save}")
+        if self.verbose:
+            print(f"Image saved at: {path_to_save}")
         
     def identify(self, cropped_path):
         return self.identifier.identify(cropped_path, self.indentifier_lang, self.device)
@@ -124,26 +125,42 @@ class OCR:
             str: Identified script language.
             str: Path to the cropped image.
         """
-        # Extract x and y coordinates from the four corner points
-        x_coords = [point[0] for point in bbox]
-        y_coords = [point[1] for point in bbox]
+        # # Extract x and y coordinates from the four corner points
+        # x_coords = [point[0] for point in bbox]
+        # y_coords = [point[1] for point in bbox]
 
-        # Get the bounding box coordinates (min and max)
-        x_min, y_min = min(x_coords), min(y_coords)
-        x_max, y_max = max(x_coords), max(y_coords)
+        # # Get the bounding box coordinates (min and max)
+        # x_min, y_min = min(x_coords), min(y_coords)
+        # x_max, y_max = max(x_coords), max(y_coords)
 
-        # Crop the image based on the bounding box
-        cropped_image = image.crop((x_min, y_min, x_max, y_max))
+        # # Crop the image based on the bounding box
+        # cropped_image = image.crop((x_min, y_min, x_max, y_max))
+        
+        # Convert list to numpy array
+        points = np.array(bbox, np.int32)
+
+        # Create a mask to extract the polygonal region
+        mask = np.zeros_like(image[:, :, 0], dtype=np.uint8)
+        cv2.fillPoly(mask, [points], 255)
+
+        # Apply the mask to extract the region
+        cropped = cv2.bitwise_and(image, image, mask=mask)
+
+        # Find bounding rectangle to crop the region
+        x, y, w, h = cv2.boundingRect(points)
+        cropped_bbox = cropped[y:y+h, x:x+w]
+
         root_image_dir = "IndicPhotoOCR/script_identification"
         os.makedirs(f"{root_image_dir}/images", exist_ok=True)
         # Temporarily save the cropped image to pass to the script model
-        cropped_path = f'{root_image_dir}/images/temp_crop_{x_min}_{y_min}.jpg'
-        # Convert RGBA to RGB so as to save them
-        if cropped_image.mode == 'RGBA':
-            cropped_image = cropped_image.convert('RGB')
-            cropped_image.save(cropped_path)
-        else:
-            cropped_image.save(cropped_path)
+        cropped_path = f'{root_image_dir}/images/temp_crop_{x}_{y}.jpg'
+        # # Convert RGBA to RGB so as to save them
+        # if cropped_image.mode == 'RGBA':
+        #     cropped_image = cropped_image.convert('RGB')
+        #     cropped_image.save(cropped_path)
+        # else:
+        #     cropped_image.save(cropped_path)
+        cv2.imwrite(cropped_path, cropped_bbox)
 
         # Predict script language, here we assume "hindi" as the model name
         if self.verbose:
@@ -186,7 +203,7 @@ class OCR:
         """
         recognized_texts = {}
         recognized_words = []
-        image = Image.open(image_path)
+        image = cv2.imread(image_path)
         
         # Run detection
         detections = self.detect(image_path)
@@ -229,7 +246,7 @@ if __name__ == '__main__':
     sample_image_path = 'test_images/image_88.jpg'
     cropped_image_path = 'test_images/cropped_image/image_141_0.jpg'
 
-    ocr = OCR(device="cuda", identifier_lang='hindi', verbose=False)
+    ocr = OCR(device="cuda", identifier_lang='auto', verbose=False)
 
     # detections = ocr.detect(sample_image_path)
     # print(detections)
