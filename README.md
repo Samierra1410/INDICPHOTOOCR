@@ -196,27 +196,26 @@ Recognition Model: Hindi, English, Assamese, Bengali, Gujarati, Marathi, Odia, P
 Bharat Scene Text Dataset - [BSTD](https://github.com/Bhashini-IITJ/BharatSceneTextDataset)
 
 ## Contributors
-| <img src="https://github.com/anikde/anikde.github.io/blob/main/Anik_New_2.jpg" width="100" style="border-radius:50%;"> |
+| <img src="https://github.com/anikde/anikde.github.io/blob/main/Anik_New_2.jpg" width="100" style="border-radius:15px;"> |
 |:---------------------------------:|
 | [Anik De](https://www.linkedin.com/in/anik-de/)                         |
 | Tech Lead and Main Contributor    |
 
-| <img src="https://abhiram4572.github.io/images/personal.jpeg" width="100" style="border-radius:50%;"> |  <img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/Aditya_Rathor.jpeg" width="100" style="border-radius:50%;"> |<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/harshiv.jpg" width="100" style="border-radius:50%;"> |
+| <img src="https://abhiram4572.github.io/images/personal.jpeg" width="100" style="border-radius:15px;"> |  <img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/Aditya_Rathor.jpeg" width="100" style="border-radius:15px;"> |<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/harshiv.jpg" width="100" style="border-radius:15px;"> |
 |:---------------------------------:|:---------------------------------:|:---------------------------------:|
 | [Abhirama](https://abhiram4572.github.io/)                         | [Aditya Rathore](https://www.linkedin.com/in/aditya-rathor-87829324b/)                        | [Harshiv Shah](https://www.linkedin.com/in/harshivshah27/)| 
 | Contributor              | Contributor                | Contributor                |
 
-|<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/sagar_agrawal.png" width="100" style="border-radius:50%;"> |<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/rajeev.png" width="100" style="border-radius:50%;"> |<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/pravin.JPG" width="100" style="border-radius:50%;"> |
+|<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/sagar_agrawal.png" width="100" style="border-radius:15px;"> |<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/rajeev.png" width="100" style="border-radius:15px;"> |<img src="https://github.com/Bhashini-IITJ/SceneTextDetection/releases/download/Photos/pravin.JPG" width="100" style="border-radius:15px;"> |
 |:---------------------------------:|:---------------------------------:|:---------------------------------:|
-|[Sagar Agarwal](https://www.linkedin.com/in/sagar-agrawal-4a0b94106/)|[Rajeev Yadav](https://www.linkedin.com/in/rajeev-yadav/)| [Pravin Kumar]()|
+|[Sagar Agarwal](https://www.linkedin.com/in/sagar-agrawal-4a0b94106/)|[Rajeev Yadav](https://www.linkedin.com/in/rajeev-yadav/)| [Pravin Kumar](https://www.linkedin.com/in/prvnkmr9060/)|
 | Contributor                | Contributor                | Contributor                |
 
-
-| <img src="https://anandmishra22.github.io/files/Mishra_oct22.png" width="100" style="border-radius:50%;"> |
+| <img src="https://anandmishra22.github.io/files/Mishra_oct22.png" width="100" style="border-radius:15px;"> |
 |:---------------------------------:|
 | [Anand Mishra](https://anandmishra22.github.io/)                         |
 | Project Investigator                |
-<!-- ## Training -->
+
 
 
 ## Citation
