@@ -12,7 +12,7 @@ A Comprehensive Toolkit for Scene Text Recognition in Indian Languages
 ![GitHub forks](https://img.shields.io/github/forks/Bhashini-IITJ/IndicPhotoOCR?style=social)
 [![Hugging Face](https://img.shields.io/badge/Hugging_Face-Demo-FF6C00?logo=Huggingface&logoColor=white)](https://huggingface.co/spaces/anikde/IndicPhotoOCR)
 
-
+[![Documentation](https://img.shields.io/badge/Documentation-Click%20Here-007BFF?style=for-the-badge&logo=ReadTheDocs&logoColor=white)](https://bhashini-iitj.github.io/IndicPhotoOCR/)
 </div>
 <hr style="width: 100%; border: 1px solid #000;">
 
