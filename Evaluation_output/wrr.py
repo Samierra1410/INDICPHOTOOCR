@@ -4,8 +4,8 @@ from difflib import SequenceMatcher
 from indic_transliteration.sanscript import transliterate, DEVANAGARI, ITRANS
 
 # === CONFIGURATION ===
-gt_path = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/iLoveMerge.json"
-ocr_path = "//Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/output_final/combined.json"
+gt_path = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Evaluation_output/evaluation_result.json"
+ocr_path = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Outputs/ocr_output/combined_ocr_output.json"
 similarity_threshold = 0.6
 
 def normalize_text(text):
