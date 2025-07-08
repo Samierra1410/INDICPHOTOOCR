@@ -4,8 +4,8 @@ from IndicPhotoOCR.ocr import OCR
 
 # === CONFIGURATION ===
 ocr_system = OCR(verbose=True, device="cpu")
-input_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/og_pics"
-output_folder = "outpu"
+input_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Original_photos"
+output_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Outputs/Detected_output"
 os.makedirs(output_folder, exist_ok=True)
 
 # === PROCESS EACH IMAGE ===

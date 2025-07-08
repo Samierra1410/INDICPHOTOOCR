@@ -3,8 +3,8 @@ import json
 from IndicPhotoOCR.ocr import OCR
 
 # Define your image folder and output folder
-image_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/og_pics"
-output_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/output_final"
+image_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Original_photos"
+output_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Outputs/ocr_output"
 os.makedirs(output_folder, exist_ok=True)
 
 # Create OCR object
