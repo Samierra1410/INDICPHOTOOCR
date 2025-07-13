@@ -1,0 +1,27 @@
+# Core dependencies
+torch>=1.12.0
+torchvision>=0.13.0
+numpy>=1.24
+opencv-python>=4.6.0
+matplotlib
+pandas
+tqdm
+scikit-learn
+Pillow
+
+# For text detection and recognition
+pyclipper
+polygon3
+shapely
+editdistance
+albumentations
+
+# Transformers and Vision Transformer (ViT)
+transformers>=4.30.0
+sentencepiece
+
+# Visualization (optional but helpful)
+seaborn
+
+# For reading/writing JSON and YAML
+pyyaml

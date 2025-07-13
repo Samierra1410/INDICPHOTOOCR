@@ -1,1 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+*.dylib
+
+# Environments
+venv/
+env/
+ENV/
+*.env
+*.conda
+*.ipynb_checkpoints
+
+# Data & models
+*.pth
+*.pt
+*.h5
+*.ckpt
+
+# Logs
+*.log
+
+# Mac / VS Code
 .DS_Store
+.vscode/
+

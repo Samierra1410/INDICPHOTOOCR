@@ -1,17 +1,17 @@
 {
   "overall": {
-    "total_ground_truth_words": 339,
-    "correctly_recognized_words": 267,
-    "wrr": 0.7876
+    "total_ground_truth_words": 294,
+    "correctly_recognized_words": 239,
+    "wrr": 0.8129
   },
   "english": {
-    "total_ground_truth_words": 180,
-    "correctly_recognized_words": 143,
-    "wrr": 0.7944
+    "total_ground_truth_words": 176,
+    "correctly_recognized_words": 142,
+    "wrr": 0.8068
   },
   "hindi_marathi": {
-    "total_ground_truth_words": 159,
-    "correctly_recognized_words": 124,
-    "wrr": 0.7799
+    "total_ground_truth_words": 118,
+    "correctly_recognized_words": 97,
+    "wrr": 0.822
   }
 }

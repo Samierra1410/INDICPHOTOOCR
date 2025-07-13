@@ -1,13 +1,13 @@
 import os
 import json
 
-input_folder = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Outputs/ocr_output"
-output_combined_json = os.path.join(input_folder, "Outputs/ocr_output/combined_ocr_output.json")
+input_folder = "/Users/samierraarora/INDICPHOTOOCR-2/Outputs/ocr_outputs"
+output_combined_json = os.path.join(input_folder, "/Users/samierraarora/INDICPHOTOOCR-2/Outputs/ocr_outputs/combined_output.json")
 
 combined_data = {}
 
 for file in sorted(os.listdir(input_folder)):
-    if file.endswith(".json") and file != "Outputs/ocr_output/combined_ocr_output.json":
+    if file.endswith(".json") and file != "/Users/samierraarora/INDICPHOTOOCR-2/new_ocr_output/combined_output.json":
         file_path = os.path.join(input_folder, file)
         image_id = os.path.splitext(file)[0]
         

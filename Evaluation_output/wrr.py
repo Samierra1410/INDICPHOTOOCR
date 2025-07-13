@@ -1,11 +1,10 @@
 import json
 import unicodedata
 from difflib import SequenceMatcher
-from indic_transliteration.sanscript import transliterate, DEVANAGARI, ITRANS
 
 # === CONFIGURATION ===
-gt_path = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Evaluation_output/evaluation_result.json"
-ocr_path = "/Users/samierraarora/IndicPhotoOCR/IndicPhotoOCR/IndicPhotoOCR2/Outputs/ocr_output/combined_ocr_output.json"
+gt_path = "/Users/samierraarora/INDICPHOTOOCR-2/Annotations/annotated_files.json"
+ocr_path = "/Users/samierraarora/INDICPHOTOOCR-2/Outputs/ocr_outputs/combined_output.json"
 similarity_threshold = 0.6
 
 def normalize_text(text):
@@ -53,7 +52,7 @@ for image_name, gt_entry in gt_data.items():
         if len(gt_text) <= 2 or gt_text.isdigit():
             continue
 
-        # Use script_language
+        # Use script_language field
         gt_lang = gt_poly.get("script_language", "").lower()
         if not gt_lang:
             if any('\u0900' <= c <= '\u097F' for c in gt_poly.get("text", "")):
@@ -61,64 +60,34 @@ for image_name, gt_entry in gt_data.items():
             else:
                 gt_lang = "english"
 
-        if gt_lang in ["hindi", "marathi"]:
-            lang_key = "hindi_marathi"
-        else:
-            lang_key = "english"
+        lang_key = "hindi_marathi" if gt_lang in ["hindi", "marathi"] else "english"
 
         total_gt += 1
         lang_stats[lang_key]["total"] += 1
 
-        # Transliterate GT text only for Hindi/Marathi
-        if lang_key == "hindi_marathi":
-            gt_translit = normalize_text(transliterate(gt_text, DEVANAGARI, ITRANS))
-        else:
-            gt_translit = gt_text
-
         match_found = False
 
-        # Try singles
+        # Try single words
         for ocr_word in flat_ocr_words:
-            try:
-                if lang_key == "hindi_marathi":
-                    ocr_trans = normalize_text(transliterate(ocr_word, DEVANAGARI, ITRANS))
-                else:
-                    ocr_trans = ocr_word
-                if ocr_trans == gt_translit or is_similar(ocr_trans, gt_translit):
-                    match_found = True
-                    break
-            except Exception:
-                continue
+            if ocr_word == gt_text or is_similar(ocr_word, gt_text):
+                match_found = True
+                break
 
         # Try bigrams
         if not match_found and len(flat_ocr_words) > 1:
             for i in range(len(flat_ocr_words) - 1):
                 combined = flat_ocr_words[i] + flat_ocr_words[i+1]
-                try:
-                    if lang_key == "hindi_marathi":
-                        combined_trans = normalize_text(transliterate(combined, DEVANAGARI, ITRANS))
-                    else:
-                        combined_trans = combined
-                    if combined_trans == gt_translit or is_similar(combined_trans, gt_translit):
-                        match_found = True
-                        break
-                except Exception:
-                    continue
+                if combined == gt_text or is_similar(combined, gt_text):
+                    match_found = True
+                    break
 
         # Try trigrams
         if not match_found and len(flat_ocr_words) > 2:
             for i in range(len(flat_ocr_words) - 2):
                 triple = flat_ocr_words[i] + flat_ocr_words[i+1] + flat_ocr_words[i+2]
-                try:
-                    if lang_key == "hindi_marathi":
-                        triple_trans = normalize_text(transliterate(triple, DEVANAGARI, ITRANS))
-                    else:
-                        triple_trans = triple
-                    if triple_trans == gt_translit or is_similar(triple_trans, gt_translit):
-                        match_found = True
-                        break
-                except Exception:
-                    continue
+                if triple == gt_text or is_similar(triple, gt_text):
+                    match_found = True
+                    break
 
         if match_found:
             correct += 1
@@ -149,10 +118,14 @@ result = {
         "wrr": round(hindi_marathi_wrr, 4)
     }
 }
+
 print(json.dumps(result, indent=2, ensure_ascii=False))
 
 with open("evaluation_result_split.json", "w", encoding="utf-8") as f:
     json.dump(result, f, indent=2, ensure_ascii=False)
+
+
+
 
 
 
