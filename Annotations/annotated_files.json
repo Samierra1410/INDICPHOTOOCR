@@ -1,5 +1,5 @@
 {
-  "pic_1": {
+  "pic_1.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -267,7 +267,7 @@
       }
     }
   },
-  "pic_2": {
+  "pic_2.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -425,7 +425,7 @@
       }
     }
   },
-  "pic_3": {
+  "pic_3.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -561,7 +561,7 @@
       }
     }
   },
-  "pic_4": {
+  "pic_4.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -609,7 +609,7 @@
       }
     }
   },
-  "pic_5": {
+  "pic_5.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -679,7 +679,7 @@
       }
     }
   },
-  "pic_6": {
+  "pic_6.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -815,7 +815,7 @@
       }
     }
   },
-  "pic_7": {
+  "pic_7.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -952,7 +952,7 @@
     }
   },
   
-  "pic_8": {
+  "pic_8.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -1155,7 +1155,7 @@
     }
   },
   
-  "pic_9": {
+  "pic_9.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -1248,7 +1248,7 @@
     }
   },
 
-  "pic_10": {
+  "pic_10.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -1384,7 +1384,7 @@
       }
     }
   },
-  "pic_11": {
+  "pic_11.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -1521,7 +1521,7 @@
     }
   },
   
-  "pic_12": {
+  "pic_12.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -1592,7 +1592,7 @@
     }
   },
   
-  "pic_13": {
+  "pic_13.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -1684,7 +1684,7 @@
       }
     }
   },
-  "pic_14": {
+  "pic_14.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -2084,7 +2084,7 @@
       }
     }
   },
-  "pic_15": {
+  "pic_15.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -2198,7 +2198,7 @@
       }
     }
   },
-  "pic_16": {
+  "pic_16.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -2378,7 +2378,7 @@
       }
     }
   },
-  "pic_17": {
+  "pic_17.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -2756,7 +2756,7 @@
       }
     }
   },
-  "pic_18": {
+  "pic_18.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -2830,7 +2830,7 @@
 
   
  
-  "pic_19": {
+  "pic_19.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -2900,7 +2900,7 @@
       }
     }
   },
-  "pic_20": {
+  "pic_20.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3058,7 +3058,7 @@
       }
     }
   },
-  "pic_21": {
+  "pic_21.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3194,7 +3194,7 @@
       }
     }
   },
-  "pic_22": {
+  "pic_22.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3352,7 +3352,7 @@
       }
     }
   },
-  "pic_23": {
+  "pic_23.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3488,7 +3488,7 @@
       }
     }
   },
-  "pic_24": {
+  "pic_24.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3624,7 +3624,7 @@
       }
     }
   },
-  "pic_25": {
+  "pic_25.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3760,7 +3760,7 @@
       }
     }
   },
-  "pic_26": {
+  "pic_26.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3941,7 +3941,7 @@
     }
   },
   
-  "pic_27": {
+  "pic_27.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -3992,7 +3992,7 @@
 ,
 
  
-  "pic_28": {
+  "pic_28.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -4085,7 +4085,7 @@
     }
   },
 
-  "pic_29": {
+  "pic_29.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -4133,7 +4133,7 @@
       }
     }
   },
-  "pic_30": {
+  "pic_30.JPG": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -4336,7 +4336,7 @@
     }
   },
   
-  "pic_31": {
+  "pic_31.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -4472,7 +4472,7 @@
       }
     }
   },
-  "pic_32": {
+  "pic_32.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -4608,7 +4608,7 @@
       }
     }
   },
-  "pic_33": {
+  "pic_33.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -4788,7 +4788,7 @@
       }
     }
   },
-  "pic_34": {
+  "pic_34.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -5144,7 +5144,7 @@
       }
     }
   },
-  "pic_35": {
+  "pic_35.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -5346,7 +5346,7 @@
       }
     }
   },
-  "pic_36": {
+  "pic_36.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -5526,7 +5526,7 @@
       }
     }
   },
-  "pic_37": {
+  "pic_37.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -5664,7 +5664,7 @@
   },
 
 
-  "pic_38": {
+  "pic_38.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -6064,7 +6064,7 @@
       }
     }
   },
-  "pic_39": {
+  "pic_39.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -6464,7 +6464,7 @@
       }
     }
   },
-  "pic_40": {
+  "pic_40.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -6622,7 +6622,7 @@
       }
     }
   },
-  "pic_41.jpg": {
+  "pic_41.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -6803,7 +6803,7 @@
     }
   }
 ,
-  "pic_42": {
+  "pic_42.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -6983,7 +6983,7 @@
       }
     }
   },
-  "pic_43": {
+  "pic_43.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7165,7 +7165,7 @@
   }
 ,
 
-  "pic_44": {
+  "pic_44.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7213,7 +7213,7 @@
       }
     }
   },
-  "pic_45": {
+  "pic_45.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7308,7 +7308,7 @@
 ,
 
   
-  "pic_46": {
+  "pic_46.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7401,7 +7401,7 @@
     }
   },
   
-  "pic_47": {
+  "pic_47.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7496,7 +7496,7 @@
 ,
 
   
-  "pic_48": {
+  "pic_48.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7764,7 +7764,7 @@
       }
     }
   },
-  "pic_49": {
+  "pic_49.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7812,7 +7812,7 @@
       }
     }
   },
-  "pic_50": {
+  "pic_50.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7882,7 +7882,7 @@
       }
     }
   },
-  "pic_51": {
+  "pic_51.jpg": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
@@ -7930,7 +7930,7 @@
       }
     }
   },
-  "pic_52": {
+  "pic_52.png": {
     "annotations": {
       "polygon_0": {
         "coordinates": [
